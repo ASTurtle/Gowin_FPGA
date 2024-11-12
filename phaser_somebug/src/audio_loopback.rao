@@ -1,0 +1,154 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="clk" trig_type="0" storage_depth="4096" window_num="1" capture_amount="4096" implementation="0" trigger_pos="0" module_name="audio_lookback" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Bus capture_enable="true" name="dacfifo_writedata[31:0]">
+                <Signal>dacfifo_writedata[31]</Signal>
+                <Signal>dacfifo_writedata[30]</Signal>
+                <Signal>dacfifo_writedata[29]</Signal>
+                <Signal>dacfifo_writedata[28]</Signal>
+                <Signal>dacfifo_writedata[27]</Signal>
+                <Signal>dacfifo_writedata[26]</Signal>
+                <Signal>dacfifo_writedata[25]</Signal>
+                <Signal>dacfifo_writedata[24]</Signal>
+                <Signal>dacfifo_writedata[23]</Signal>
+                <Signal>dacfifo_writedata[22]</Signal>
+                <Signal>dacfifo_writedata[21]</Signal>
+                <Signal>dacfifo_writedata[20]</Signal>
+                <Signal>dacfifo_writedata[19]</Signal>
+                <Signal>dacfifo_writedata[18]</Signal>
+                <Signal>dacfifo_writedata[17]</Signal>
+                <Signal>dacfifo_writedata[16]</Signal>
+                <Signal>dacfifo_writedata[15]</Signal>
+                <Signal>dacfifo_writedata[14]</Signal>
+                <Signal>dacfifo_writedata[13]</Signal>
+                <Signal>dacfifo_writedata[12]</Signal>
+                <Signal>dacfifo_writedata[11]</Signal>
+                <Signal>dacfifo_writedata[10]</Signal>
+                <Signal>dacfifo_writedata[9]</Signal>
+                <Signal>dacfifo_writedata[8]</Signal>
+                <Signal>dacfifo_writedata[7]</Signal>
+                <Signal>dacfifo_writedata[6]</Signal>
+                <Signal>dacfifo_writedata[5]</Signal>
+                <Signal>dacfifo_writedata[4]</Signal>
+                <Signal>dacfifo_writedata[3]</Signal>
+                <Signal>dacfifo_writedata[2]</Signal>
+                <Signal>dacfifo_writedata[1]</Signal>
+                <Signal>dacfifo_writedata[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="adcfifo_readdata[31:0]">
+                <Signal>adcfifo_readdata[31]</Signal>
+                <Signal>adcfifo_readdata[30]</Signal>
+                <Signal>adcfifo_readdata[29]</Signal>
+                <Signal>adcfifo_readdata[28]</Signal>
+                <Signal>adcfifo_readdata[27]</Signal>
+                <Signal>adcfifo_readdata[26]</Signal>
+                <Signal>adcfifo_readdata[25]</Signal>
+                <Signal>adcfifo_readdata[24]</Signal>
+                <Signal>adcfifo_readdata[23]</Signal>
+                <Signal>adcfifo_readdata[22]</Signal>
+                <Signal>adcfifo_readdata[21]</Signal>
+                <Signal>adcfifo_readdata[20]</Signal>
+                <Signal>adcfifo_readdata[19]</Signal>
+                <Signal>adcfifo_readdata[18]</Signal>
+                <Signal>adcfifo_readdata[17]</Signal>
+                <Signal>adcfifo_readdata[16]</Signal>
+                <Signal>adcfifo_readdata[15]</Signal>
+                <Signal>adcfifo_readdata[14]</Signal>
+                <Signal>adcfifo_readdata[13]</Signal>
+                <Signal>adcfifo_readdata[12]</Signal>
+                <Signal>adcfifo_readdata[11]</Signal>
+                <Signal>adcfifo_readdata[10]</Signal>
+                <Signal>adcfifo_readdata[9]</Signal>
+                <Signal>adcfifo_readdata[8]</Signal>
+                <Signal>adcfifo_readdata[7]</Signal>
+                <Signal>adcfifo_readdata[6]</Signal>
+                <Signal>adcfifo_readdata[5]</Signal>
+                <Signal>adcfifo_readdata[4]</Signal>
+                <Signal>adcfifo_readdata[3]</Signal>
+                <Signal>adcfifo_readdata[2]</Signal>
+                <Signal>adcfifo_readdata[1]</Signal>
+                <Signal>adcfifo_readdata[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">dacfifo_write</Signal>
+            <Bus capture_enable="true" name="phaser_0/DDS_out[11:0]">
+                <Signal>phaser_0/DDS_out[11]</Signal>
+                <Signal>phaser_0/DDS_out[10]</Signal>
+                <Signal>phaser_0/DDS_out[9]</Signal>
+                <Signal>phaser_0/DDS_out[8]</Signal>
+                <Signal>phaser_0/DDS_out[7]</Signal>
+                <Signal>phaser_0/DDS_out[6]</Signal>
+                <Signal>phaser_0/DDS_out[5]</Signal>
+                <Signal>phaser_0/DDS_out[4]</Signal>
+                <Signal>phaser_0/DDS_out[3]</Signal>
+                <Signal>phaser_0/DDS_out[2]</Signal>
+                <Signal>phaser_0/DDS_out[1]</Signal>
+                <Signal>phaser_0/DDS_out[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="phaser_0/DDS_ABS[15:0]">
+                <Signal>phaser_0/DDS_ABS[15]</Signal>
+                <Signal>phaser_0/DDS_ABS[14]</Signal>
+                <Signal>phaser_0/DDS_ABS[13]</Signal>
+                <Signal>phaser_0/DDS_ABS[12]</Signal>
+                <Signal>phaser_0/DDS_ABS[11]</Signal>
+                <Signal>phaser_0/DDS_ABS[10]</Signal>
+                <Signal>phaser_0/DDS_ABS[9]</Signal>
+                <Signal>phaser_0/DDS_ABS[8]</Signal>
+                <Signal>phaser_0/DDS_ABS[7]</Signal>
+                <Signal>phaser_0/DDS_ABS[6]</Signal>
+                <Signal>phaser_0/DDS_ABS[5]</Signal>
+                <Signal>phaser_0/DDS_ABS[4]</Signal>
+                <Signal>phaser_0/DDS_ABS[3]</Signal>
+                <Signal>phaser_0/DDS_ABS[2]</Signal>
+                <Signal>phaser_0/DDS_ABS[1]</Signal>
+                <Signal>phaser_0/DDS_ABS[0]</Signal>
+            </Bus>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>dacfifo_write</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0001000011110110</GAO_ID>
+</GAO_CONFIG>

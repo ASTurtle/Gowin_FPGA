@@ -1,0 +1,61 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'
+Analyzing included file 'define.vh'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":1)
+Back to file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":1)
+Analyzing included file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\static_macro_define.v'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":2)
+Back to file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":2)
+Analyzing included file 'parameter.vh'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":21)
+Back to file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":21)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v'
+Analyzing included file 'define.vh'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Back to file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Analyzing included file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\static_macro_define.v'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Back to file 'C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Undeclared symbol 'gainwe_posedge', assumed default net type 'wire'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Compiling module 'Equalizer_Top'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":3)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Extracting RAM for identifier '**'("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+WARN  (EX3791) : Expression size ** truncated to fit in target size **("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+WARN  (EX2526) : Entry size ** at **:** does not match memory width **("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+WARN  (EX3792) : Literal value 20'b11111111111110000000011000100011 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000000000101111000 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000000110010011001 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000000001011100010 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000001100100100000 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000000010111100010 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000011001000010011 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000000110001000001 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000110001110110010 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000001101001111110 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110001100011000101010 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110000011110011011011 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110011000100011010100 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110001001100000010100 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110110000010111011101 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111110011001111011000011 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111111011100010101000110 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111111001001000100100001 truncated to fit in 20 bits
+WARN  (EX3792) : Literal value 20'b11111111111111011010000100011110 truncated to fit in 20 bits
+NOTE  (EX0101) : Current top module is "Equalizer_Top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "(delay)/(Equalizer_Top)(DATA_WIDTH=1)" instantiated to "delay_gainwe" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+[95%] Generate netlist file "D:\1\my\EQ3\3\ch62_audio_loopback\src\equalizer\temp\equalizer\equalizer.vg" completed
+Generate template file "D:\1\my\EQ3\3\ch62_audio_loopback\src\equalizer\temp\equalizer\equalizer_tmp.v" completed
+[100%] Generate report file "D:\1\my\EQ3\3\ch62_audio_loopback\src\equalizer\temp\equalizer\equalizer_syn.rpt.html" completed
+GowinSynthesis finish

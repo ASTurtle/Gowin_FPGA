@@ -1,0 +1,2396 @@
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
+//All rights reserved.
+//File Title: Post-PnR Verilog Simulation Model file
+//Tool Version: V1.9.10.02
+//Created Time: Sat Nov  9 02:09:17 2024
+
+`timescale 100 ps/100 ps
+module DDS_CJY(
+	clk,
+	rstn,
+	wr,
+	waddr,
+	wdata,
+	dout,
+	out_valid
+);
+input clk;
+input rstn;
+input wr;
+input [15:0] waddr;
+input [31:0] wdata;
+output [15:0] dout;
+output out_valid;
+wire GND;
+wire VCC;
+wire clk;
+wire [15:0] dout;
+wire out_valid;
+wire rstn;
+wire [15:0] waddr;
+wire [31:0] wdata;
+wire wr;
+wire \DDS/phase_wr_Z ;
+wire \DDS/n35_6 ;
+wire [3:0] \DDS/waveform_Z ;
+wire [7:0] \DDS/FreqCtrl_Z ;
+wire [7:0] \DDS/PhaseCtrl_Z ;
+wire [7:0] \DDS/phase ;
+wire \DDS/ctrl/waveform_sel ;
+wire \DDS/ctrl/phase_sel ;
+wire \DDS/ctrl/freq_sel ;
+wire \DDS/ctrl/waveform_sel_5 ;
+wire \DDS/PhaseAdder/n27_3 ;
+wire \DDS/PhaseAdder/n28_3 ;
+wire \DDS/PhaseAdder/n29_3 ;
+wire \DDS/PhaseAdder/n30_3 ;
+wire \DDS/PhaseAdder/n31_3 ;
+wire \DDS/PhaseAdder/n32_3 ;
+wire \DDS/PhaseAdder/n33_3 ;
+wire \DDS/PhaseAdder/n34_3 ;
+wire \DDS/PhaseAdder/n25_1 ;
+wire \DDS/PhaseAdder/n25_2 ;
+wire \DDS/PhaseAdder/n24_1 ;
+wire \DDS/PhaseAdder/n24_2 ;
+wire \DDS/PhaseAdder/n23_1 ;
+wire \DDS/PhaseAdder/n23_2 ;
+wire \DDS/PhaseAdder/n22_1 ;
+wire \DDS/PhaseAdder/n22_2 ;
+wire \DDS/PhaseAdder/n21_1 ;
+wire \DDS/PhaseAdder/n21_2 ;
+wire \DDS/PhaseAdder/n20_1 ;
+wire \DDS/PhaseAdder/n20_2 ;
+wire \DDS/PhaseAdder/n19_1 ;
+wire \DDS/PhaseAdder/n19_2 ;
+wire \DDS/PhaseAdder/n18_1 ;
+wire \DDS/PhaseAdder/n18_0_COUT ;
+wire \DDS/DDS_LUT/n399_3 ;
+wire \DDS/DDS_LUT/n400_3 ;
+wire \DDS/DDS_LUT/n401_3 ;
+wire \DDS/DDS_LUT/n402_3 ;
+wire \DDS/DDS_LUT/n403_3 ;
+wire \DDS/DDS_LUT/n404_3 ;
+wire \DDS/DDS_LUT/n405_3 ;
+wire \DDS/DDS_LUT/n406_3 ;
+wire \DDS/DDS_LUT/n407_3 ;
+wire \DDS/DDS_LUT/n408_3 ;
+wire \DDS/DDS_LUT/n409_3 ;
+wire \DDS/DDS_LUT/n410_3 ;
+wire \DDS/DDS_LUT/n411_3 ;
+wire \DDS/DDS_LUT/n412_3 ;
+wire \DDS/DDS_LUT/n253_4 ;
+wire \DDS/DDS_LUT/n398_5 ;
+wire \DDS/DDS_LUT/n105_5 ;
+wire \DDS/DDS_LUT/n106_5 ;
+wire \DDS/DDS_LUT/n107_5 ;
+wire \DDS/DDS_LUT/n108_5 ;
+wire \DDS/DDS_LUT/n109_5 ;
+wire \DDS/DDS_LUT/n110_5 ;
+wire \DDS/DDS_LUT/sin_mem_out_14_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_13_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_12_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_11_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_10_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_9_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_8_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_7_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_6_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_4_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_3_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_2_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_1_8 ;
+wire \DDS/DDS_LUT/sin_mem_out_0_8 ;
+wire \DDS/DDS_LUT/n105_6 ;
+wire \DDS/DDS_LUT/n107_6 ;
+wire \DDS/DDS_LUT/n107_7 ;
+wire \DDS/DDS_LUT/n108_6 ;
+wire \DDS/DDS_LUT/sin_mem_out_14_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_13_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_12_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_12_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_11_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_11_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_10_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_10_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_9_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_9_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_8_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_8_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_7_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_7_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_6_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_6_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_4_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_4_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_3_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_3_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_3_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_2_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_2_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_2_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_1_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_1_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_0_9 ;
+wire \DDS/DDS_LUT/sin_mem_out_0_10 ;
+wire \DDS/DDS_LUT/sin_mem_out_0_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_11_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_11_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_11_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_11_14 ;
+wire \DDS/DDS_LUT/sin_mem_out_10_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_10_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_10_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_10_14 ;
+wire \DDS/DDS_LUT/sin_mem_out_9_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_9_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_9_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_8_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_8_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_7_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_7_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_7_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_6_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_6_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_6_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_6_14 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_14 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_15 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_16 ;
+wire \DDS/DDS_LUT/sin_mem_out_5_17 ;
+wire \DDS/DDS_LUT/sin_mem_out_4_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_4_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_3_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_3_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_2_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_2_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_1_11 ;
+wire \DDS/DDS_LUT/sin_mem_out_1_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_1_13 ;
+wire \DDS/DDS_LUT/sin_mem_out_0_12 ;
+wire \DDS/DDS_LUT/sin_mem_out_0_13 ;
+wire \DDS/DDS_LUT/n315_2 ;
+wire \DDS/DDS_LUT/n315_3 ;
+wire \DDS/DDS_LUT/n314_2 ;
+wire \DDS/DDS_LUT/n314_3 ;
+wire \DDS/DDS_LUT/n313_2 ;
+wire \DDS/DDS_LUT/n313_3 ;
+wire \DDS/DDS_LUT/n312_2 ;
+wire \DDS/DDS_LUT/n312_3 ;
+wire \DDS/DDS_LUT/n311_2 ;
+wire \DDS/DDS_LUT/n311_3 ;
+wire \DDS/DDS_LUT/n310_2 ;
+wire \DDS/DDS_LUT/n310_3 ;
+wire \DDS/DDS_LUT/n309_2 ;
+wire \DDS/DDS_LUT/n309_3 ;
+wire \DDS/DDS_LUT/n308_2 ;
+wire \DDS/DDS_LUT/n308_3 ;
+wire \DDS/DDS_LUT/n307_2 ;
+wire \DDS/DDS_LUT/n307_3 ;
+wire \DDS/DDS_LUT/n306_2 ;
+wire \DDS/DDS_LUT/n306_3 ;
+wire \DDS/DDS_LUT/n305_2 ;
+wire \DDS/DDS_LUT/n305_3 ;
+wire \DDS/DDS_LUT/n304_2 ;
+wire \DDS/DDS_LUT/n304_3 ;
+wire \DDS/DDS_LUT/n303_2 ;
+wire \DDS/DDS_LUT/n303_3 ;
+wire \DDS/DDS_LUT/n302_2 ;
+wire \DDS/DDS_LUT/n300_8 ;
+wire \DDS/DDS_LUT/n316_8 ;
+wire \DDS/DDS_LUT/n315_7 ;
+wire \DDS/DDS_LUT/n314_7 ;
+wire \DDS/DDS_LUT/n313_7 ;
+wire \DDS/DDS_LUT/n312_7 ;
+wire \DDS/DDS_LUT/n311_7 ;
+wire \DDS/DDS_LUT/n310_7 ;
+wire \DDS/DDS_LUT/n309_7 ;
+wire \DDS/DDS_LUT/n308_7 ;
+wire \DDS/DDS_LUT/n307_7 ;
+wire \DDS/DDS_LUT/n306_7 ;
+wire \DDS/DDS_LUT/n305_7 ;
+wire \DDS/DDS_LUT/n304_7 ;
+wire \DDS/DDS_LUT/n303_7 ;
+wire \DDS/DDS_LUT/n302_7 ;
+wire \DDS/DDS_LUT/n300_11 ;
+wire [5:0] \DDS/DDS_LUT/index_addr ;
+wire [7:7] \DDS/DDS_LUT/addr_nx ;
+wire [7:7] \DDS/DDS_LUT/addr_rx ;
+wire [7:7] \DDS/DDS_LUT/addr_tx ;
+wire [7:7] \DDS/DDS_LUT/addr_tx_d ;
+wire [14:0] \DDS/DDS_LUT/mem_out ;
+wire [14:0] \DDS/DDS_LUT/mem_out_p ;
+wire [15:1] \DDS/DDS_LUT/mem_out_n ;
+wire [4:0] \DDS/DDS_LUT/out_valid_shift ;
+wire [14:0] \DDS/DDS_LUT/sin_mem_out ;
+VCC VCC_cZ (
+  .V(VCC)
+);
+GND GND_cZ (
+  .G(GND)
+);
+GSR GSR (
+	.GSRI(VCC)
+);
+LUT3 \DDS/ctrl/waveform_sel_s0  (
+	.I0(waddr[5]),
+	.I1(waddr[4]),
+	.I2(\DDS/ctrl/waveform_sel_5 ),
+	.F(\DDS/ctrl/waveform_sel )
+);
+defparam \DDS/ctrl/waveform_sel_s0 .INIT=8'h40;
+LUT3 \DDS/ctrl/phase_sel_s0  (
+	.I0(waddr[4]),
+	.I1(waddr[5]),
+	.I2(\DDS/ctrl/waveform_sel_5 ),
+	.F(\DDS/ctrl/phase_sel )
+);
+defparam \DDS/ctrl/phase_sel_s0 .INIT=8'h40;
+LUT3 \DDS/ctrl/freq_sel_s0  (
+	.I0(waddr[4]),
+	.I1(waddr[5]),
+	.I2(\DDS/ctrl/waveform_sel_5 ),
+	.F(\DDS/ctrl/freq_sel )
+);
+defparam \DDS/ctrl/freq_sel_s0 .INIT=8'h80;
+LUT4 \DDS/ctrl/waveform_sel_s1  (
+	.I0(waddr[2]),
+	.I1(waddr[3]),
+	.I2(waddr[6]),
+	.I3(wr),
+	.F(\DDS/ctrl/waveform_sel_5 )
+);
+defparam \DDS/ctrl/waveform_sel_s1 .INIT=16'h0100;
+DFFCE \DDS/ctrl/waveform_2_s0  (
+	.D(wdata[2]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/waveform_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/waveform_Z [2])
+);
+defparam \DDS/ctrl/waveform_2_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/waveform_1_s0  (
+	.D(wdata[1]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/waveform_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/waveform_Z [1])
+);
+defparam \DDS/ctrl/waveform_1_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/waveform_0_s0  (
+	.D(wdata[0]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/waveform_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/waveform_Z [0])
+);
+defparam \DDS/ctrl/waveform_0_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/FreqCtrl_7_s0  (
+	.D(wdata[7]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [7])
+);
+defparam \DDS/ctrl/FreqCtrl_7_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/FreqCtrl_6_s0  (
+	.D(wdata[6]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [6])
+);
+defparam \DDS/ctrl/FreqCtrl_6_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/FreqCtrl_5_s0  (
+	.D(wdata[5]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [5])
+);
+defparam \DDS/ctrl/FreqCtrl_5_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/FreqCtrl_4_s0  (
+	.D(wdata[4]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [4])
+);
+defparam \DDS/ctrl/FreqCtrl_4_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/FreqCtrl_3_s0  (
+	.D(wdata[3]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [3])
+);
+defparam \DDS/ctrl/FreqCtrl_3_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/FreqCtrl_2_s0  (
+	.D(wdata[2]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [2])
+);
+defparam \DDS/ctrl/FreqCtrl_2_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/FreqCtrl_1_s0  (
+	.D(wdata[1]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [1])
+);
+defparam \DDS/ctrl/FreqCtrl_1_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_7_s0  (
+	.D(wdata[7]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [7])
+);
+defparam \DDS/ctrl/PhaseCtrl_7_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_6_s0  (
+	.D(wdata[6]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [6])
+);
+defparam \DDS/ctrl/PhaseCtrl_6_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_5_s0  (
+	.D(wdata[5]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [5])
+);
+defparam \DDS/ctrl/PhaseCtrl_5_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_4_s0  (
+	.D(wdata[4]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [4])
+);
+defparam \DDS/ctrl/PhaseCtrl_4_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_3_s0  (
+	.D(wdata[3]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [3])
+);
+defparam \DDS/ctrl/PhaseCtrl_3_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_2_s0  (
+	.D(wdata[2]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [2])
+);
+defparam \DDS/ctrl/PhaseCtrl_2_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_1_s0  (
+	.D(wdata[1]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [1])
+);
+defparam \DDS/ctrl/PhaseCtrl_1_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/PhaseCtrl_0_s0  (
+	.D(wdata[0]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/phase_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/PhaseCtrl_Z [0])
+);
+defparam \DDS/ctrl/PhaseCtrl_0_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/phase_wr_s0  (
+	.D(\DDS/ctrl/phase_sel ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase_wr_Z )
+);
+defparam \DDS/ctrl/phase_wr_s0 .INIT=1'b0;
+DFFCE \DDS/ctrl/waveform_3_s0  (
+	.D(wdata[3]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/waveform_sel ),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/waveform_Z [3])
+);
+defparam \DDS/ctrl/waveform_3_s0 .INIT=1'b0;
+DFFPE \DDS/ctrl/FreqCtrl_0_s0  (
+	.D(wdata[0]),
+	.CLK(clk),
+	.CE(\DDS/ctrl/freq_sel ),
+	.PRESET(\DDS/n35_6 ),
+	.Q(\DDS/FreqCtrl_Z [0])
+);
+defparam \DDS/ctrl/FreqCtrl_0_s0 .INIT=1'b1;
+INV \DDS/ctrl/n35_s2  (
+	.I(rstn),
+	.O(\DDS/n35_6 )
+);
+LUT3 \DDS/PhaseAdder/n27_s0  (
+	.I0(\DDS/PhaseCtrl_Z [7]),
+	.I1(\DDS/PhaseAdder/n18_1 ),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n27_3 )
+);
+defparam \DDS/PhaseAdder/n27_s0 .INIT=8'hAC;
+LUT3 \DDS/PhaseAdder/n28_s0  (
+	.I0(\DDS/PhaseAdder/n19_1 ),
+	.I1(\DDS/PhaseCtrl_Z [6]),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n28_3 )
+);
+defparam \DDS/PhaseAdder/n28_s0 .INIT=8'hCA;
+LUT3 \DDS/PhaseAdder/n29_s0  (
+	.I0(\DDS/PhaseAdder/n20_1 ),
+	.I1(\DDS/PhaseCtrl_Z [5]),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n29_3 )
+);
+defparam \DDS/PhaseAdder/n29_s0 .INIT=8'hCA;
+LUT3 \DDS/PhaseAdder/n30_s0  (
+	.I0(\DDS/PhaseAdder/n21_1 ),
+	.I1(\DDS/PhaseCtrl_Z [4]),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n30_3 )
+);
+defparam \DDS/PhaseAdder/n30_s0 .INIT=8'hCA;
+LUT3 \DDS/PhaseAdder/n31_s0  (
+	.I0(\DDS/PhaseAdder/n22_1 ),
+	.I1(\DDS/PhaseCtrl_Z [3]),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n31_3 )
+);
+defparam \DDS/PhaseAdder/n31_s0 .INIT=8'hCA;
+LUT3 \DDS/PhaseAdder/n32_s0  (
+	.I0(\DDS/PhaseAdder/n23_1 ),
+	.I1(\DDS/PhaseCtrl_Z [2]),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n32_3 )
+);
+defparam \DDS/PhaseAdder/n32_s0 .INIT=8'hCA;
+LUT3 \DDS/PhaseAdder/n33_s0  (
+	.I0(\DDS/PhaseAdder/n24_1 ),
+	.I1(\DDS/PhaseCtrl_Z [1]),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n33_3 )
+);
+defparam \DDS/PhaseAdder/n33_s0 .INIT=8'hCA;
+LUT3 \DDS/PhaseAdder/n34_s0  (
+	.I0(\DDS/PhaseAdder/n25_1 ),
+	.I1(\DDS/PhaseCtrl_Z [0]),
+	.I2(\DDS/phase_wr_Z ),
+	.F(\DDS/PhaseAdder/n34_3 )
+);
+defparam \DDS/PhaseAdder/n34_s0 .INIT=8'hCA;
+DFFCE \DDS/PhaseAdder/phase_reg_7_s0  (
+	.D(\DDS/PhaseAdder/n27_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [7])
+);
+defparam \DDS/PhaseAdder/phase_reg_7_s0 .INIT=1'b0;
+DFFCE \DDS/PhaseAdder/phase_reg_6_s0  (
+	.D(\DDS/PhaseAdder/n28_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [6])
+);
+defparam \DDS/PhaseAdder/phase_reg_6_s0 .INIT=1'b0;
+DFFCE \DDS/PhaseAdder/phase_reg_5_s0  (
+	.D(\DDS/PhaseAdder/n29_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [5])
+);
+defparam \DDS/PhaseAdder/phase_reg_5_s0 .INIT=1'b0;
+DFFCE \DDS/PhaseAdder/phase_reg_4_s0  (
+	.D(\DDS/PhaseAdder/n30_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [4])
+);
+defparam \DDS/PhaseAdder/phase_reg_4_s0 .INIT=1'b0;
+DFFCE \DDS/PhaseAdder/phase_reg_3_s0  (
+	.D(\DDS/PhaseAdder/n31_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [3])
+);
+defparam \DDS/PhaseAdder/phase_reg_3_s0 .INIT=1'b0;
+DFFCE \DDS/PhaseAdder/phase_reg_2_s0  (
+	.D(\DDS/PhaseAdder/n32_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [2])
+);
+defparam \DDS/PhaseAdder/phase_reg_2_s0 .INIT=1'b0;
+DFFCE \DDS/PhaseAdder/phase_reg_1_s0  (
+	.D(\DDS/PhaseAdder/n33_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [1])
+);
+defparam \DDS/PhaseAdder/phase_reg_1_s0 .INIT=1'b0;
+DFFCE \DDS/PhaseAdder/phase_reg_0_s0  (
+	.D(\DDS/PhaseAdder/n34_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/phase [0])
+);
+defparam \DDS/PhaseAdder/phase_reg_0_s0 .INIT=1'b0;
+ALU \DDS/PhaseAdder/n25_s  (
+	.I0(\DDS/phase [0]),
+	.I1(\DDS/FreqCtrl_Z [0]),
+	.I3(GND),
+	.CIN(GND),
+	.COUT(\DDS/PhaseAdder/n25_2 ),
+	.SUM(\DDS/PhaseAdder/n25_1 )
+);
+defparam \DDS/PhaseAdder/n25_s .ALU_MODE=0;
+ALU \DDS/PhaseAdder/n24_s  (
+	.I0(\DDS/phase [1]),
+	.I1(\DDS/FreqCtrl_Z [1]),
+	.I3(GND),
+	.CIN(\DDS/PhaseAdder/n25_2 ),
+	.COUT(\DDS/PhaseAdder/n24_2 ),
+	.SUM(\DDS/PhaseAdder/n24_1 )
+);
+defparam \DDS/PhaseAdder/n24_s .ALU_MODE=0;
+ALU \DDS/PhaseAdder/n23_s  (
+	.I0(\DDS/phase [2]),
+	.I1(\DDS/FreqCtrl_Z [2]),
+	.I3(GND),
+	.CIN(\DDS/PhaseAdder/n24_2 ),
+	.COUT(\DDS/PhaseAdder/n23_2 ),
+	.SUM(\DDS/PhaseAdder/n23_1 )
+);
+defparam \DDS/PhaseAdder/n23_s .ALU_MODE=0;
+ALU \DDS/PhaseAdder/n22_s  (
+	.I0(\DDS/phase [3]),
+	.I1(\DDS/FreqCtrl_Z [3]),
+	.I3(GND),
+	.CIN(\DDS/PhaseAdder/n23_2 ),
+	.COUT(\DDS/PhaseAdder/n22_2 ),
+	.SUM(\DDS/PhaseAdder/n22_1 )
+);
+defparam \DDS/PhaseAdder/n22_s .ALU_MODE=0;
+ALU \DDS/PhaseAdder/n21_s  (
+	.I0(\DDS/phase [4]),
+	.I1(\DDS/FreqCtrl_Z [4]),
+	.I3(GND),
+	.CIN(\DDS/PhaseAdder/n22_2 ),
+	.COUT(\DDS/PhaseAdder/n21_2 ),
+	.SUM(\DDS/PhaseAdder/n21_1 )
+);
+defparam \DDS/PhaseAdder/n21_s .ALU_MODE=0;
+ALU \DDS/PhaseAdder/n20_s  (
+	.I0(\DDS/phase [5]),
+	.I1(\DDS/FreqCtrl_Z [5]),
+	.I3(GND),
+	.CIN(\DDS/PhaseAdder/n21_2 ),
+	.COUT(\DDS/PhaseAdder/n20_2 ),
+	.SUM(\DDS/PhaseAdder/n20_1 )
+);
+defparam \DDS/PhaseAdder/n20_s .ALU_MODE=0;
+ALU \DDS/PhaseAdder/n19_s  (
+	.I0(\DDS/phase [6]),
+	.I1(\DDS/FreqCtrl_Z [6]),
+	.I3(GND),
+	.CIN(\DDS/PhaseAdder/n20_2 ),
+	.COUT(\DDS/PhaseAdder/n19_2 ),
+	.SUM(\DDS/PhaseAdder/n19_1 )
+);
+defparam \DDS/PhaseAdder/n19_s .ALU_MODE=0;
+ALU \DDS/PhaseAdder/n18_s  (
+	.I0(\DDS/phase [7]),
+	.I1(\DDS/FreqCtrl_Z [7]),
+	.I3(GND),
+	.CIN(\DDS/PhaseAdder/n19_2 ),
+	.COUT(\DDS/PhaseAdder/n18_0_COUT ),
+	.SUM(\DDS/PhaseAdder/n18_1 )
+);
+defparam \DDS/PhaseAdder/n18_s .ALU_MODE=0;
+LUT3 \DDS/DDS_LUT/n399_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_n [14]),
+	.I1(\DDS/DDS_LUT/mem_out_p [14]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n399_3 )
+);
+defparam \DDS/DDS_LUT/n399_s0 .INIT=8'hAC;
+LUT3 \DDS/DDS_LUT/n400_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [13]),
+	.I1(\DDS/DDS_LUT/mem_out_n [13]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n400_3 )
+);
+defparam \DDS/DDS_LUT/n400_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n401_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [12]),
+	.I1(\DDS/DDS_LUT/mem_out_n [12]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n401_3 )
+);
+defparam \DDS/DDS_LUT/n401_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n402_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [11]),
+	.I1(\DDS/DDS_LUT/mem_out_n [11]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n402_3 )
+);
+defparam \DDS/DDS_LUT/n402_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n403_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [10]),
+	.I1(\DDS/DDS_LUT/mem_out_n [10]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n403_3 )
+);
+defparam \DDS/DDS_LUT/n403_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n404_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [9]),
+	.I1(\DDS/DDS_LUT/mem_out_n [9]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n404_3 )
+);
+defparam \DDS/DDS_LUT/n404_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n405_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [8]),
+	.I1(\DDS/DDS_LUT/mem_out_n [8]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n405_3 )
+);
+defparam \DDS/DDS_LUT/n405_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n406_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [7]),
+	.I1(\DDS/DDS_LUT/mem_out_n [7]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n406_3 )
+);
+defparam \DDS/DDS_LUT/n406_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n407_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [6]),
+	.I1(\DDS/DDS_LUT/mem_out_n [6]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n407_3 )
+);
+defparam \DDS/DDS_LUT/n407_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n408_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [5]),
+	.I1(\DDS/DDS_LUT/mem_out_n [5]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n408_3 )
+);
+defparam \DDS/DDS_LUT/n408_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n409_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [4]),
+	.I1(\DDS/DDS_LUT/mem_out_n [4]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n409_3 )
+);
+defparam \DDS/DDS_LUT/n409_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n410_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [3]),
+	.I1(\DDS/DDS_LUT/mem_out_n [3]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n410_3 )
+);
+defparam \DDS/DDS_LUT/n410_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n411_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [2]),
+	.I1(\DDS/DDS_LUT/mem_out_n [2]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n411_3 )
+);
+defparam \DDS/DDS_LUT/n411_s0 .INIT=8'hCA;
+LUT3 \DDS/DDS_LUT/n412_s0  (
+	.I0(\DDS/DDS_LUT/mem_out_p [1]),
+	.I1(\DDS/DDS_LUT/mem_out_n [1]),
+	.I2(\DDS/DDS_LUT/addr_tx_d [7]),
+	.F(\DDS/DDS_LUT/n412_3 )
+);
+defparam \DDS/DDS_LUT/n412_s0 .INIT=8'hCA;
+LUT4 \DDS/DDS_LUT/n253_s1  (
+	.I0(\DDS/waveform_Z [0]),
+	.I1(\DDS/waveform_Z [1]),
+	.I2(\DDS/waveform_Z [2]),
+	.I3(\DDS/waveform_Z [3]),
+	.F(\DDS/DDS_LUT/n253_4 )
+);
+defparam \DDS/DDS_LUT/n253_s1 .INIT=16'hFFFE;
+LUT2 \DDS/DDS_LUT/n398_s1  (
+	.I0(\DDS/DDS_LUT/addr_tx_d [7]),
+	.I1(\DDS/DDS_LUT/mem_out_n [15]),
+	.F(\DDS/DDS_LUT/n398_5 )
+);
+defparam \DDS/DDS_LUT/n398_s1 .INIT=4'h8;
+LUT4 \DDS/DDS_LUT/n105_s1  (
+	.I0(\DDS/phase [4]),
+	.I1(\DDS/DDS_LUT/n105_6 ),
+	.I2(\DDS/phase [5]),
+	.I3(\DDS/phase [6]),
+	.F(\DDS/DDS_LUT/n105_5 )
+);
+defparam \DDS/DDS_LUT/n105_s1 .INIT=16'h4FF0;
+LUT4 \DDS/DDS_LUT/n106_s1  (
+	.I0(\DDS/phase [5]),
+	.I1(\DDS/phase [6]),
+	.I2(\DDS/DDS_LUT/n105_6 ),
+	.I3(\DDS/phase [4]),
+	.F(\DDS/DDS_LUT/n106_5 )
+);
+defparam \DDS/DDS_LUT/n106_s1 .INIT=16'hF34C;
+LUT4 \DDS/DDS_LUT/n107_s1  (
+	.I0(\DDS/DDS_LUT/n107_6 ),
+	.I1(\DDS/phase [6]),
+	.I2(\DDS/DDS_LUT/n107_7 ),
+	.I3(\DDS/phase [3]),
+	.F(\DDS/DDS_LUT/n107_5 )
+);
+defparam \DDS/DDS_LUT/n107_s1 .INIT=16'hFBF4;
+LUT4 \DDS/DDS_LUT/n108_s1  (
+	.I0(\DDS/DDS_LUT/n108_6 ),
+	.I1(\DDS/phase [6]),
+	.I2(\DDS/DDS_LUT/n107_7 ),
+	.I3(\DDS/phase [2]),
+	.F(\DDS/DDS_LUT/n108_5 )
+);
+defparam \DDS/DDS_LUT/n108_s1 .INIT=16'hFBF4;
+LUT4 \DDS/DDS_LUT/n109_s1  (
+	.I0(\DDS/phase [0]),
+	.I1(\DDS/phase [6]),
+	.I2(\DDS/DDS_LUT/n107_7 ),
+	.I3(\DDS/phase [1]),
+	.F(\DDS/DDS_LUT/n109_5 )
+);
+defparam \DDS/DDS_LUT/n109_s1 .INIT=16'hF7F8;
+LUT2 \DDS/DDS_LUT/n110_s1  (
+	.I0(\DDS/phase [0]),
+	.I1(\DDS/DDS_LUT/n107_7 ),
+	.F(\DDS/DDS_LUT/n110_5 )
+);
+defparam \DDS/DDS_LUT/n110_s1 .INIT=4'hE;
+LUT4 \DDS/DDS_LUT/sin_mem_out_14_s3  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/sin_mem_out_14_9 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_14_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_14_s3 .INIT=16'h0703;
+LUT4 \DDS/DDS_LUT/sin_mem_out_13_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_13_9 ),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_13_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_13_s3 .INIT=16'h3117;
+LUT3 \DDS/DDS_LUT/sin_mem_out_12_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_12_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_12_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_12_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_12_s3 .INIT=8'h5C;
+LUT3 \DDS/DDS_LUT/sin_mem_out_11_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_11_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_11_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_11_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s3 .INIT=8'hCA;
+LUT2 \DDS/DDS_LUT/sin_mem_out_10_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_10_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_10_10 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_10_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s3 .INIT=4'h7;
+LUT3 \DDS/DDS_LUT/sin_mem_out_9_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_9_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_9_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_9_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_9_s3 .INIT=8'hC5;
+LUT3 \DDS/DDS_LUT/sin_mem_out_8_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_8_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_8_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_8_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_8_s3 .INIT=8'hC5;
+LUT3 \DDS/DDS_LUT/sin_mem_out_7_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_7_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_7_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_7_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_7_s3 .INIT=8'h35;
+LUT3 \DDS/DDS_LUT/sin_mem_out_6_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_6_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_6_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_6_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s3 .INIT=8'h35;
+LUT4 \DDS/DDS_LUT/sin_mem_out_5_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_5_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_5_10 ),
+	.I2(\DDS/DDS_LUT/sin_mem_out_5_11 ),
+	.I3(\DDS/DDS_LUT/sin_mem_out_5_12 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s3 .INIT=16'hF8FF;
+LUT3 \DDS/DDS_LUT/sin_mem_out_4_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_4_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_4_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_4_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_4_s3 .INIT=8'h3A;
+LUT4 \DDS/DDS_LUT/sin_mem_out_3_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_3_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_3_10 ),
+	.I2(\DDS/DDS_LUT/sin_mem_out_3_11 ),
+	.I3(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_3_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_3_s3 .INIT=16'hF0BB;
+LUT4 \DDS/DDS_LUT/sin_mem_out_2_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_2_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_2_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.I3(\DDS/DDS_LUT/sin_mem_out_2_11 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_2_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_2_s3 .INIT=16'h3FA0;
+LUT3 \DDS/DDS_LUT/sin_mem_out_1_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_1_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_1_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_1_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_1_s3 .INIT=8'hCA;
+LUT4 \DDS/DDS_LUT/sin_mem_out_0_s3  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_0_9 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_0_10 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/sin_mem_out_0_11 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_0_8 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_0_s3 .INIT=16'hA0CF;
+LUT4 \DDS/DDS_LUT/n105_s2  (
+	.I0(\DDS/phase [0]),
+	.I1(\DDS/phase [1]),
+	.I2(\DDS/phase [2]),
+	.I3(\DDS/phase [3]),
+	.F(\DDS/DDS_LUT/n105_6 )
+);
+defparam \DDS/DDS_LUT/n105_s2 .INIT=16'h0001;
+LUT3 \DDS/DDS_LUT/n107_s2  (
+	.I0(\DDS/phase [0]),
+	.I1(\DDS/phase [1]),
+	.I2(\DDS/phase [2]),
+	.F(\DDS/DDS_LUT/n107_6 )
+);
+defparam \DDS/DDS_LUT/n107_s2 .INIT=8'h01;
+LUT4 \DDS/DDS_LUT/n107_s3  (
+	.I0(\DDS/phase [4]),
+	.I1(\DDS/phase [5]),
+	.I2(\DDS/phase [6]),
+	.I3(\DDS/DDS_LUT/n105_6 ),
+	.F(\DDS/DDS_LUT/n107_7 )
+);
+defparam \DDS/DDS_LUT/n107_s3 .INIT=16'h1000;
+LUT2 \DDS/DDS_LUT/n108_s2  (
+	.I0(\DDS/phase [0]),
+	.I1(\DDS/phase [1]),
+	.F(\DDS/DDS_LUT/n108_6 )
+);
+defparam \DDS/DDS_LUT/n108_s2 .INIT=4'h1;
+LUT4 \DDS/DDS_LUT/sin_mem_out_14_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_14_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_14_s4 .INIT=16'hBFC4;
+LUT4 \DDS/DDS_LUT/sin_mem_out_13_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [0]),
+	.I1(\DDS/DDS_LUT/index_addr [1]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_13_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_13_s4 .INIT=16'h3FF8;
+LUT4 \DDS/DDS_LUT/sin_mem_out_12_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [1]),
+	.I1(\DDS/DDS_LUT/index_addr [3]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_12_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_12_s4 .INIT=16'hFDC2;
+LUT4 \DDS/DDS_LUT/sin_mem_out_12_s5  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_5_9 ),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_12_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_12_s5 .INIT=16'h3E23;
+LUT4 \DDS/DDS_LUT/sin_mem_out_11_s4  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_11_11 ),
+	.I1(\DDS/DDS_LUT/index_addr [3]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_11_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s4 .INIT=16'hA287;
+LUT4 \DDS/DDS_LUT/sin_mem_out_11_s5  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_11_12 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_11_13 ),
+	.I2(\DDS/DDS_LUT/sin_mem_out_11_14 ),
+	.I3(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_11_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s5 .INIT=16'h0FEE;
+LUT4 \DDS/DDS_LUT/sin_mem_out_10_s4  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_10_11 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_10_12 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.I3(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_10_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s4 .INIT=16'hFA3F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_10_s5  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_10_13 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_10_14 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_10_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s5 .INIT=16'hAFFC;
+LUT3 \DDS/DDS_LUT/sin_mem_out_9_s4  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_9_11 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_9_12 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_9_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_9_s4 .INIT=8'hC5;
+LUT4 \DDS/DDS_LUT/sin_mem_out_9_s5  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_11_12 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_9_13 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_9_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_9_s5 .INIT=16'hA3FC;
+LUT4 \DDS/DDS_LUT/sin_mem_out_8_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/sin_mem_out_14_9 ),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_8_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_8_s4 .INIT=16'hB2C0;
+LUT4 \DDS/DDS_LUT/sin_mem_out_8_s5  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_8_11 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_8_12 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_8_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_8_s5 .INIT=16'hC351;
+LUT4 \DDS/DDS_LUT/sin_mem_out_7_s4  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_7_11 ),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/sin_mem_out_7_12 ),
+	.I3(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_7_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_7_s4 .INIT=16'hC3A2;
+LUT4 \DDS/DDS_LUT/sin_mem_out_7_s5  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/sin_mem_out_7_13 ),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_7_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_7_s5 .INIT=16'h906B;
+LUT3 \DDS/DDS_LUT/sin_mem_out_6_s4  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_6_11 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_6_12 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_6_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s4 .INIT=8'h35;
+LUT4 \DDS/DDS_LUT/sin_mem_out_6_s5  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_6_13 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_6_14 ),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_6_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s5 .INIT=16'h35A3;
+LUT2 \DDS/DDS_LUT/sin_mem_out_5_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [0]),
+	.I1(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s4 .INIT=4'h8;
+LUT4 \DDS/DDS_LUT/sin_mem_out_5_s5  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s5 .INIT=16'h7C22;
+LUT3 \DDS/DDS_LUT/sin_mem_out_5_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [0]),
+	.I1(\DDS/DDS_LUT/index_addr [1]),
+	.I2(\DDS/DDS_LUT/sin_mem_out_5_13 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s6 .INIT=8'h10;
+LUT4 \DDS/DDS_LUT/sin_mem_out_5_s7  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_5_14 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_5_15 ),
+	.I2(\DDS/DDS_LUT/sin_mem_out_5_16 ),
+	.I3(\DDS/DDS_LUT/sin_mem_out_5_17 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s7 .INIT=16'h0777;
+LUT4 \DDS/DDS_LUT/sin_mem_out_4_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/sin_mem_out_4_11 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_4_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_4_s4 .INIT=16'h887C;
+LUT4 \DDS/DDS_LUT/sin_mem_out_4_s5  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [0]),
+	.I2(\DDS/DDS_LUT/sin_mem_out_4_12 ),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_4_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_4_s5 .INIT=16'h6B90;
+LUT4 \DDS/DDS_LUT/sin_mem_out_3_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [1]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_3_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_3_s4 .INIT=16'h4001;
+LUT4 \DDS/DDS_LUT/sin_mem_out_3_s5  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/sin_mem_out_11_12 ),
+	.I3(\DDS/DDS_LUT/sin_mem_out_3_12 ),
+	.F(\DDS/DDS_LUT/sin_mem_out_3_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_3_s5 .INIT=16'hBB0F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_3_s6  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_3_13 ),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_3_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_3_s6 .INIT=16'hB661;
+LUT4 \DDS/DDS_LUT/sin_mem_out_2_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_2_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_2_s4 .INIT=16'h71CF;
+LUT4 \DDS/DDS_LUT/sin_mem_out_2_s5  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_2_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_2_s5 .INIT=16'hBCC5;
+LUT4 \DDS/DDS_LUT/sin_mem_out_2_s6  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_2_12 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_2_13 ),
+	.I2(\DDS/DDS_LUT/index_addr [0]),
+	.I3(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_2_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_2_s6 .INIT=16'h03FA;
+LUT4 \DDS/DDS_LUT/sin_mem_out_1_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [1]),
+	.I2(\DDS/DDS_LUT/sin_mem_out_1_11 ),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_1_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_1_s4 .INIT=16'hEB1F;
+LUT3 \DDS/DDS_LUT/sin_mem_out_1_s5  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_1_12 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_1_13 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_1_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_1_s5 .INIT=8'hC5;
+LUT4 \DDS/DDS_LUT/sin_mem_out_0_s4  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_0_9 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_0_s4 .INIT=16'hC41F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_0_s5  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_0_10 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_0_s5 .INIT=16'h328F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_0_s6  (
+	.I0(\DDS/DDS_LUT/sin_mem_out_0_12 ),
+	.I1(\DDS/DDS_LUT/sin_mem_out_0_13 ),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_0_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_0_s6 .INIT=16'h0CFA;
+LUT4 \DDS/DDS_LUT/sin_mem_out_11_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [0]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_11_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s6 .INIT=16'h3ED3;
+LUT3 \DDS/DDS_LUT/sin_mem_out_11_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_11_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s7 .INIT=8'h60;
+LUT2 \DDS/DDS_LUT/sin_mem_out_11_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_11_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s8 .INIT=4'h1;
+LUT4 \DDS/DDS_LUT/sin_mem_out_11_s9  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_11_14 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s9 .INIT=16'hBEE3;
+LUT4 \DDS/DDS_LUT/sin_mem_out_10_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_10_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s6 .INIT=16'hACF7;
+LUT4 \DDS/DDS_LUT/sin_mem_out_10_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_10_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s7 .INIT=16'h3A91;
+LUT4 \DDS/DDS_LUT/sin_mem_out_10_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_10_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s8 .INIT=16'hBCE4;
+LUT4 \DDS/DDS_LUT/sin_mem_out_10_s9  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_10_14 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s9 .INIT=16'hB60C;
+LUT4 \DDS/DDS_LUT/sin_mem_out_9_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_9_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_9_s6 .INIT=16'h28DF;
+LUT4 \DDS/DDS_LUT/sin_mem_out_9_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [3]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_9_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_9_s7 .INIT=16'hCB1F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_9_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_9_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_9_s8 .INIT=16'hE830;
+LUT3 \DDS/DDS_LUT/sin_mem_out_8_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_8_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_8_s6 .INIT=8'h35;
+LUT4 \DDS/DDS_LUT/sin_mem_out_8_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_8_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_8_s7 .INIT=16'h3B30;
+LUT4 \DDS/DDS_LUT/sin_mem_out_7_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_7_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_7_s6 .INIT=16'h6B16;
+LUT4 \DDS/DDS_LUT/sin_mem_out_7_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_7_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_7_s7 .INIT=16'hE571;
+LUT4 \DDS/DDS_LUT/sin_mem_out_7_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [3]),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_7_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_7_s8 .INIT=16'hCA13;
+LUT4 \DDS/DDS_LUT/sin_mem_out_6_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_6_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s6 .INIT=16'h7407;
+LUT4 \DDS/DDS_LUT/sin_mem_out_6_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [3]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_6_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s7 .INIT=16'h2CF4;
+LUT4 \DDS/DDS_LUT/sin_mem_out_6_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [1]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_6_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s8 .INIT=16'hDC38;
+LUT4 \DDS/DDS_LUT/sin_mem_out_6_s9  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_6_14 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s9 .INIT=16'h32F3;
+LUT4 \DDS/DDS_LUT/sin_mem_out_5_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s8 .INIT=16'h223D;
+LUT4 \DDS/DDS_LUT/sin_mem_out_5_s9  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [1]),
+	.I3(\DDS/DDS_LUT/index_addr [0]),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_14 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s9 .INIT=16'h0E00;
+LUT4 \DDS/DDS_LUT/sin_mem_out_5_s10  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_15 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s10 .INIT=16'h78C7;
+LUT2 \DDS/DDS_LUT/sin_mem_out_5_s11  (
+	.I0(\DDS/DDS_LUT/index_addr [0]),
+	.I1(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_16 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s11 .INIT=4'h4;
+LUT4 \DDS/DDS_LUT/sin_mem_out_5_s12  (
+	.I0(\DDS/DDS_LUT/index_addr [3]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_5_17 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s12 .INIT=16'hB74F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_4_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [0]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_4_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_4_s6 .INIT=16'hF61F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_4_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [0]),
+	.I1(\DDS/DDS_LUT/index_addr [3]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [5]),
+	.F(\DDS/DDS_LUT/sin_mem_out_4_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_4_s7 .INIT=16'h0DB0;
+LUT3 \DDS/DDS_LUT/sin_mem_out_3_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [1]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_3_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_3_s7 .INIT=8'h0B;
+LUT4 \DDS/DDS_LUT/sin_mem_out_3_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [3]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [1]),
+	.F(\DDS/DDS_LUT/sin_mem_out_3_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_3_s8 .INIT=16'h9FE0;
+LUT4 \DDS/DDS_LUT/sin_mem_out_2_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [4]),
+	.I1(\DDS/DDS_LUT/index_addr [5]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_2_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_2_s7 .INIT=16'hF94F;
+LUT4 \DDS/DDS_LUT/sin_mem_out_2_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [2]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [5]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_2_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_2_s8 .INIT=16'h6E78;
+LUT4 \DDS/DDS_LUT/sin_mem_out_1_s6  (
+	.I0(\DDS/DDS_LUT/index_addr [1]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [2]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_1_11 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_1_s6 .INIT=16'h7ACD;
+LUT4 \DDS/DDS_LUT/sin_mem_out_1_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_1_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_1_s7 .INIT=16'hD53E;
+LUT4 \DDS/DDS_LUT/sin_mem_out_1_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [4]),
+	.F(\DDS/DDS_LUT/sin_mem_out_1_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_1_s8 .INIT=16'hA3C0;
+LUT4 \DDS/DDS_LUT/sin_mem_out_0_s7  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [2]),
+	.I2(\DDS/DDS_LUT/index_addr [4]),
+	.I3(\DDS/DDS_LUT/index_addr [3]),
+	.F(\DDS/DDS_LUT/sin_mem_out_0_12 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_0_s7 .INIT=16'hE338;
+LUT4 \DDS/DDS_LUT/sin_mem_out_0_s8  (
+	.I0(\DDS/DDS_LUT/index_addr [5]),
+	.I1(\DDS/DDS_LUT/index_addr [4]),
+	.I2(\DDS/DDS_LUT/index_addr [3]),
+	.I3(\DDS/DDS_LUT/index_addr [2]),
+	.F(\DDS/DDS_LUT/sin_mem_out_0_13 )
+);
+defparam \DDS/DDS_LUT/sin_mem_out_0_s8 .INIT=16'h45BE;
+DFFRE \DDS/DDS_LUT/index_addr_5_s0  (
+	.D(\DDS/DDS_LUT/n105_5 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/index_addr [5])
+);
+defparam \DDS/DDS_LUT/index_addr_5_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/index_addr_4_s0  (
+	.D(\DDS/DDS_LUT/n106_5 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/index_addr [4])
+);
+defparam \DDS/DDS_LUT/index_addr_4_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/index_addr_3_s0  (
+	.D(\DDS/DDS_LUT/n107_5 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/index_addr [3])
+);
+defparam \DDS/DDS_LUT/index_addr_3_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/index_addr_2_s0  (
+	.D(\DDS/DDS_LUT/n108_5 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/index_addr [2])
+);
+defparam \DDS/DDS_LUT/index_addr_2_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/index_addr_1_s0  (
+	.D(\DDS/DDS_LUT/n109_5 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/index_addr [1])
+);
+defparam \DDS/DDS_LUT/index_addr_1_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/index_addr_0_s0  (
+	.D(\DDS/DDS_LUT/n110_5 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/index_addr [0])
+);
+defparam \DDS/DDS_LUT/index_addr_0_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/addr_nx_7_s0  (
+	.D(\DDS/phase [7]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/addr_nx [7])
+);
+defparam \DDS/DDS_LUT/addr_nx_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/addr_rx_7_s0  (
+	.D(\DDS/DDS_LUT/addr_nx [7]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/addr_rx [7])
+);
+defparam \DDS/DDS_LUT/addr_rx_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/addr_tx_7_s0  (
+	.D(\DDS/DDS_LUT/addr_rx [7]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/addr_tx [7])
+);
+defparam \DDS/DDS_LUT/addr_tx_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/addr_tx_d_7_s0  (
+	.D(\DDS/DDS_LUT/addr_tx [7]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/addr_tx_d [7])
+);
+defparam \DDS/DDS_LUT/addr_tx_d_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_14_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [14]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [14])
+);
+defparam \DDS/DDS_LUT/mem_out_14_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_13_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [13]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [13])
+);
+defparam \DDS/DDS_LUT/mem_out_13_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_12_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [12]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [12])
+);
+defparam \DDS/DDS_LUT/mem_out_12_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_11_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [11]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [11])
+);
+defparam \DDS/DDS_LUT/mem_out_11_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_10_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [10]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [10])
+);
+defparam \DDS/DDS_LUT/mem_out_10_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_9_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [9]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [9])
+);
+defparam \DDS/DDS_LUT/mem_out_9_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_8_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [8]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [8])
+);
+defparam \DDS/DDS_LUT/mem_out_8_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_7_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [7]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [7])
+);
+defparam \DDS/DDS_LUT/mem_out_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_6_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [6]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [6])
+);
+defparam \DDS/DDS_LUT/mem_out_6_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_5_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [5]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [5])
+);
+defparam \DDS/DDS_LUT/mem_out_5_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_4_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [4]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [4])
+);
+defparam \DDS/DDS_LUT/mem_out_4_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_3_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [3]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [3])
+);
+defparam \DDS/DDS_LUT/mem_out_3_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_2_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [2]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [2])
+);
+defparam \DDS/DDS_LUT/mem_out_2_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_1_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [1]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [1])
+);
+defparam \DDS/DDS_LUT/mem_out_1_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_0_s0  (
+	.D(\DDS/DDS_LUT/sin_mem_out [0]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/n253_4 ),
+	.Q(\DDS/DDS_LUT/mem_out [0])
+);
+defparam \DDS/DDS_LUT/mem_out_0_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_14_s0  (
+	.D(\DDS/DDS_LUT/mem_out [14]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [14])
+);
+defparam \DDS/DDS_LUT/mem_out_p_14_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_13_s0  (
+	.D(\DDS/DDS_LUT/mem_out [13]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [13])
+);
+defparam \DDS/DDS_LUT/mem_out_p_13_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_12_s0  (
+	.D(\DDS/DDS_LUT/mem_out [12]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [12])
+);
+defparam \DDS/DDS_LUT/mem_out_p_12_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_11_s0  (
+	.D(\DDS/DDS_LUT/mem_out [11]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [11])
+);
+defparam \DDS/DDS_LUT/mem_out_p_11_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_10_s0  (
+	.D(\DDS/DDS_LUT/mem_out [10]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [10])
+);
+defparam \DDS/DDS_LUT/mem_out_p_10_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_9_s0  (
+	.D(\DDS/DDS_LUT/mem_out [9]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [9])
+);
+defparam \DDS/DDS_LUT/mem_out_p_9_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_8_s0  (
+	.D(\DDS/DDS_LUT/mem_out [8]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [8])
+);
+defparam \DDS/DDS_LUT/mem_out_p_8_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_7_s0  (
+	.D(\DDS/DDS_LUT/mem_out [7]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [7])
+);
+defparam \DDS/DDS_LUT/mem_out_p_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_6_s0  (
+	.D(\DDS/DDS_LUT/mem_out [6]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [6])
+);
+defparam \DDS/DDS_LUT/mem_out_p_6_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_5_s0  (
+	.D(\DDS/DDS_LUT/mem_out [5]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [5])
+);
+defparam \DDS/DDS_LUT/mem_out_p_5_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_4_s0  (
+	.D(\DDS/DDS_LUT/mem_out [4]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [4])
+);
+defparam \DDS/DDS_LUT/mem_out_p_4_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_3_s0  (
+	.D(\DDS/DDS_LUT/mem_out [3]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [3])
+);
+defparam \DDS/DDS_LUT/mem_out_p_3_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_2_s0  (
+	.D(\DDS/DDS_LUT/mem_out [2]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [2])
+);
+defparam \DDS/DDS_LUT/mem_out_p_2_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_1_s0  (
+	.D(\DDS/DDS_LUT/mem_out [1]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [1])
+);
+defparam \DDS/DDS_LUT/mem_out_p_1_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_p_0_s0  (
+	.D(\DDS/DDS_LUT/mem_out [0]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_p [0])
+);
+defparam \DDS/DDS_LUT/mem_out_p_0_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_15_s0  (
+	.D(\DDS/DDS_LUT/n300_11 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [15])
+);
+defparam \DDS/DDS_LUT/mem_out_n_15_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_14_s0  (
+	.D(\DDS/DDS_LUT/n302_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [14])
+);
+defparam \DDS/DDS_LUT/mem_out_n_14_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_13_s0  (
+	.D(\DDS/DDS_LUT/n303_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [13])
+);
+defparam \DDS/DDS_LUT/mem_out_n_13_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_12_s0  (
+	.D(\DDS/DDS_LUT/n304_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [12])
+);
+defparam \DDS/DDS_LUT/mem_out_n_12_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_11_s0  (
+	.D(\DDS/DDS_LUT/n305_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [11])
+);
+defparam \DDS/DDS_LUT/mem_out_n_11_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_10_s0  (
+	.D(\DDS/DDS_LUT/n306_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [10])
+);
+defparam \DDS/DDS_LUT/mem_out_n_10_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_9_s0  (
+	.D(\DDS/DDS_LUT/n307_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [9])
+);
+defparam \DDS/DDS_LUT/mem_out_n_9_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_8_s0  (
+	.D(\DDS/DDS_LUT/n308_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [8])
+);
+defparam \DDS/DDS_LUT/mem_out_n_8_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_7_s0  (
+	.D(\DDS/DDS_LUT/n309_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [7])
+);
+defparam \DDS/DDS_LUT/mem_out_n_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_6_s0  (
+	.D(\DDS/DDS_LUT/n310_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [6])
+);
+defparam \DDS/DDS_LUT/mem_out_n_6_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_5_s0  (
+	.D(\DDS/DDS_LUT/n311_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [5])
+);
+defparam \DDS/DDS_LUT/mem_out_n_5_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_4_s0  (
+	.D(\DDS/DDS_LUT/n312_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [4])
+);
+defparam \DDS/DDS_LUT/mem_out_n_4_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_3_s0  (
+	.D(\DDS/DDS_LUT/n313_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [3])
+);
+defparam \DDS/DDS_LUT/mem_out_n_3_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_2_s0  (
+	.D(\DDS/DDS_LUT/n314_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [2])
+);
+defparam \DDS/DDS_LUT/mem_out_n_2_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/mem_out_n_1_s0  (
+	.D(\DDS/DDS_LUT/n315_2 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/mem_out_n [1])
+);
+defparam \DDS/DDS_LUT/mem_out_n_1_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_15_s0  (
+	.D(\DDS/DDS_LUT/n398_5 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[15])
+);
+defparam \DDS/DDS_LUT/dout_r_15_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_14_s0  (
+	.D(\DDS/DDS_LUT/n399_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[14])
+);
+defparam \DDS/DDS_LUT/dout_r_14_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_13_s0  (
+	.D(\DDS/DDS_LUT/n400_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[13])
+);
+defparam \DDS/DDS_LUT/dout_r_13_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_12_s0  (
+	.D(\DDS/DDS_LUT/n401_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[12])
+);
+defparam \DDS/DDS_LUT/dout_r_12_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_11_s0  (
+	.D(\DDS/DDS_LUT/n402_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[11])
+);
+defparam \DDS/DDS_LUT/dout_r_11_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_10_s0  (
+	.D(\DDS/DDS_LUT/n403_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[10])
+);
+defparam \DDS/DDS_LUT/dout_r_10_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_9_s0  (
+	.D(\DDS/DDS_LUT/n404_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[9])
+);
+defparam \DDS/DDS_LUT/dout_r_9_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_8_s0  (
+	.D(\DDS/DDS_LUT/n405_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[8])
+);
+defparam \DDS/DDS_LUT/dout_r_8_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_7_s0  (
+	.D(\DDS/DDS_LUT/n406_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[7])
+);
+defparam \DDS/DDS_LUT/dout_r_7_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_6_s0  (
+	.D(\DDS/DDS_LUT/n407_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[6])
+);
+defparam \DDS/DDS_LUT/dout_r_6_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_5_s0  (
+	.D(\DDS/DDS_LUT/n408_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[5])
+);
+defparam \DDS/DDS_LUT/dout_r_5_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_4_s0  (
+	.D(\DDS/DDS_LUT/n409_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[4])
+);
+defparam \DDS/DDS_LUT/dout_r_4_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_3_s0  (
+	.D(\DDS/DDS_LUT/n410_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[3])
+);
+defparam \DDS/DDS_LUT/dout_r_3_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_2_s0  (
+	.D(\DDS/DDS_LUT/n411_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[2])
+);
+defparam \DDS/DDS_LUT/dout_r_2_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_1_s0  (
+	.D(\DDS/DDS_LUT/n412_3 ),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[1])
+);
+defparam \DDS/DDS_LUT/dout_r_1_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/dout_r_0_s0  (
+	.D(\DDS/DDS_LUT/mem_out_p [0]),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/n35_6 ),
+	.Q(dout[0])
+);
+defparam \DDS/DDS_LUT/dout_r_0_s0 .INIT=1'b0;
+DFFCE \DDS/DDS_LUT/out_valid_shift_5_s0  (
+	.D(\DDS/DDS_LUT/out_valid_shift [4]),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(out_valid)
+);
+defparam \DDS/DDS_LUT/out_valid_shift_5_s0 .INIT=1'b0;
+DFFCE \DDS/DDS_LUT/out_valid_shift_4_s0  (
+	.D(\DDS/DDS_LUT/out_valid_shift [3]),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/out_valid_shift [4])
+);
+defparam \DDS/DDS_LUT/out_valid_shift_4_s0 .INIT=1'b0;
+DFFCE \DDS/DDS_LUT/out_valid_shift_3_s0  (
+	.D(\DDS/DDS_LUT/out_valid_shift [2]),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/out_valid_shift [3])
+);
+defparam \DDS/DDS_LUT/out_valid_shift_3_s0 .INIT=1'b0;
+DFFCE \DDS/DDS_LUT/out_valid_shift_2_s0  (
+	.D(\DDS/DDS_LUT/out_valid_shift [1]),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/out_valid_shift [2])
+);
+defparam \DDS/DDS_LUT/out_valid_shift_2_s0 .INIT=1'b0;
+DFFCE \DDS/DDS_LUT/out_valid_shift_1_s0  (
+	.D(\DDS/DDS_LUT/out_valid_shift [0]),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/out_valid_shift [1])
+);
+defparam \DDS/DDS_LUT/out_valid_shift_1_s0 .INIT=1'b0;
+DFFCE \DDS/DDS_LUT/out_valid_shift_0_s0  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.CLEAR(\DDS/n35_6 ),
+	.Q(\DDS/DDS_LUT/out_valid_shift [0])
+);
+defparam \DDS/DDS_LUT/out_valid_shift_0_s0 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_14_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_14_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [14])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_14_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_13_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_13_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [13])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_13_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_12_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_12_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [12])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_12_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_11_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_11_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [11])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_11_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_10_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_10_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [10])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_10_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_9_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_9_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [9])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_9_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_8_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_8_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [8])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_8_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_7_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_7_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [7])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_7_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_6_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_6_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [6])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_6_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_5_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_5_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [5])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_5_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_4_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_4_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [4])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_4_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_3_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_3_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [3])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_3_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_2_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_2_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [2])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_2_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_1_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_1_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [1])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_1_s1 .INIT=1'b0;
+DFFRE \DDS/DDS_LUT/sin_mem_out_0_s1  (
+	.D(rstn),
+	.CLK(clk),
+	.CE(VCC),
+	.RESET(\DDS/DDS_LUT/sin_mem_out_0_8 ),
+	.Q(\DDS/DDS_LUT/sin_mem_out [0])
+);
+defparam \DDS/DDS_LUT/sin_mem_out_0_s1 .INIT=1'b0;
+ALU \DDS/DDS_LUT/n315_s  (
+	.I0(\DDS/DDS_LUT/n315_7 ),
+	.I1(\DDS/DDS_LUT/n316_8 ),
+	.I3(GND),
+	.CIN(GND),
+	.COUT(\DDS/DDS_LUT/n315_3 ),
+	.SUM(\DDS/DDS_LUT/n315_2 )
+);
+defparam \DDS/DDS_LUT/n315_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n314_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n314_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n315_3 ),
+	.COUT(\DDS/DDS_LUT/n314_3 ),
+	.SUM(\DDS/DDS_LUT/n314_2 )
+);
+defparam \DDS/DDS_LUT/n314_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n313_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n313_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n314_3 ),
+	.COUT(\DDS/DDS_LUT/n313_3 ),
+	.SUM(\DDS/DDS_LUT/n313_2 )
+);
+defparam \DDS/DDS_LUT/n313_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n312_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n312_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n313_3 ),
+	.COUT(\DDS/DDS_LUT/n312_3 ),
+	.SUM(\DDS/DDS_LUT/n312_2 )
+);
+defparam \DDS/DDS_LUT/n312_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n311_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n311_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n312_3 ),
+	.COUT(\DDS/DDS_LUT/n311_3 ),
+	.SUM(\DDS/DDS_LUT/n311_2 )
+);
+defparam \DDS/DDS_LUT/n311_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n310_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n310_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n311_3 ),
+	.COUT(\DDS/DDS_LUT/n310_3 ),
+	.SUM(\DDS/DDS_LUT/n310_2 )
+);
+defparam \DDS/DDS_LUT/n310_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n309_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n309_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n310_3 ),
+	.COUT(\DDS/DDS_LUT/n309_3 ),
+	.SUM(\DDS/DDS_LUT/n309_2 )
+);
+defparam \DDS/DDS_LUT/n309_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n308_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n308_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n309_3 ),
+	.COUT(\DDS/DDS_LUT/n308_3 ),
+	.SUM(\DDS/DDS_LUT/n308_2 )
+);
+defparam \DDS/DDS_LUT/n308_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n307_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n307_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n308_3 ),
+	.COUT(\DDS/DDS_LUT/n307_3 ),
+	.SUM(\DDS/DDS_LUT/n307_2 )
+);
+defparam \DDS/DDS_LUT/n307_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n306_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n306_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n307_3 ),
+	.COUT(\DDS/DDS_LUT/n306_3 ),
+	.SUM(\DDS/DDS_LUT/n306_2 )
+);
+defparam \DDS/DDS_LUT/n306_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n305_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n305_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n306_3 ),
+	.COUT(\DDS/DDS_LUT/n305_3 ),
+	.SUM(\DDS/DDS_LUT/n305_2 )
+);
+defparam \DDS/DDS_LUT/n305_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n304_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n304_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n305_3 ),
+	.COUT(\DDS/DDS_LUT/n304_3 ),
+	.SUM(\DDS/DDS_LUT/n304_2 )
+);
+defparam \DDS/DDS_LUT/n304_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n303_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n303_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n304_3 ),
+	.COUT(\DDS/DDS_LUT/n303_3 ),
+	.SUM(\DDS/DDS_LUT/n303_2 )
+);
+defparam \DDS/DDS_LUT/n303_s .ALU_MODE=0;
+ALU \DDS/DDS_LUT/n302_s  (
+	.I0(GND),
+	.I1(\DDS/DDS_LUT/n302_7 ),
+	.I3(GND),
+	.CIN(\DDS/DDS_LUT/n303_3 ),
+	.COUT(\DDS/DDS_LUT/n300_8 ),
+	.SUM(\DDS/DDS_LUT/n302_2 )
+);
+defparam \DDS/DDS_LUT/n302_s .ALU_MODE=0;
+INV \DDS/DDS_LUT/n316_s3  (
+	.I(\DDS/DDS_LUT/mem_out [0]),
+	.O(\DDS/DDS_LUT/n316_8 )
+);
+INV \DDS/DDS_LUT/n315_s2  (
+	.I(\DDS/DDS_LUT/mem_out [1]),
+	.O(\DDS/DDS_LUT/n315_7 )
+);
+INV \DDS/DDS_LUT/n314_s2  (
+	.I(\DDS/DDS_LUT/mem_out [2]),
+	.O(\DDS/DDS_LUT/n314_7 )
+);
+INV \DDS/DDS_LUT/n313_s2  (
+	.I(\DDS/DDS_LUT/mem_out [3]),
+	.O(\DDS/DDS_LUT/n313_7 )
+);
+INV \DDS/DDS_LUT/n312_s2  (
+	.I(\DDS/DDS_LUT/mem_out [4]),
+	.O(\DDS/DDS_LUT/n312_7 )
+);
+INV \DDS/DDS_LUT/n311_s2  (
+	.I(\DDS/DDS_LUT/mem_out [5]),
+	.O(\DDS/DDS_LUT/n311_7 )
+);
+INV \DDS/DDS_LUT/n310_s2  (
+	.I(\DDS/DDS_LUT/mem_out [6]),
+	.O(\DDS/DDS_LUT/n310_7 )
+);
+INV \DDS/DDS_LUT/n309_s2  (
+	.I(\DDS/DDS_LUT/mem_out [7]),
+	.O(\DDS/DDS_LUT/n309_7 )
+);
+INV \DDS/DDS_LUT/n308_s2  (
+	.I(\DDS/DDS_LUT/mem_out [8]),
+	.O(\DDS/DDS_LUT/n308_7 )
+);
+INV \DDS/DDS_LUT/n307_s2  (
+	.I(\DDS/DDS_LUT/mem_out [9]),
+	.O(\DDS/DDS_LUT/n307_7 )
+);
+INV \DDS/DDS_LUT/n306_s2  (
+	.I(\DDS/DDS_LUT/mem_out [10]),
+	.O(\DDS/DDS_LUT/n306_7 )
+);
+INV \DDS/DDS_LUT/n305_s2  (
+	.I(\DDS/DDS_LUT/mem_out [11]),
+	.O(\DDS/DDS_LUT/n305_7 )
+);
+INV \DDS/DDS_LUT/n304_s2  (
+	.I(\DDS/DDS_LUT/mem_out [12]),
+	.O(\DDS/DDS_LUT/n304_7 )
+);
+INV \DDS/DDS_LUT/n303_s2  (
+	.I(\DDS/DDS_LUT/mem_out [13]),
+	.O(\DDS/DDS_LUT/n303_7 )
+);
+INV \DDS/DDS_LUT/n302_s2  (
+	.I(\DDS/DDS_LUT/mem_out [14]),
+	.O(\DDS/DDS_LUT/n302_7 )
+);
+LUT1 \DDS/DDS_LUT/n300_s5  (
+	.I0(\DDS/DDS_LUT/n300_8 ),
+	.F(\DDS/DDS_LUT/n300_11 )
+);
+defparam \DDS/DDS_LUT/n300_s5 .INIT=2'h1;
+endmodule

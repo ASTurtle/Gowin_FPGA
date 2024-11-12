@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_loopback" Register="290" Lut="3" T_Register="10337(290)" T_Alu="5826(0)" T_Lut="10875(3)" T_MULTALU27X18="4(0)" T_MULT12X12="4(0)" T_MULT27X36="10(0)" T_MULTADDALU12X12="2(0)" T_Bsram="54(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="73(17)" T_Alu="15(15)" T_Lut="179(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="8" Lut="14" T_Register="56(8)" T_Lut="169(14)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="72" T_Register="48(25)" T_Lut="155(72)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="83" T_Register="23(23)" T_Lut="83(83)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="compressor_0" Register="81" Alu="58" Lut="159" T_Register="97(81)" T_Alu="58(58)" T_Lut="159(159)" T_MULTALU27X18="1(0)">
+        <SubModule name="gain_inst" Register="16" MULTALU27X18="1" T_Register="16(16)" T_MULTALU27X18="1(1)"/>
+    </SubModule>
+    <SubModule name="compressor_1" Register="81" Alu="58" Lut="157" T_Register="97(81)" T_Alu="58(58)" T_Lut="157(157)" T_MULTALU27X18="1(0)">
+        <SubModule name="gain_inst" Register="16" MULTALU27X18="1" T_Register="16(16)" T_MULTALU27X18="1(1)"/>
+    </SubModule>
+    <SubModule name="distortion_0" Register="43" Lut="56" T_Register="43(43)" T_Lut="56(56)"/>
+    <SubModule name="distortion_1" Register="43" Lut="56" Bsram="2" T_Register="43(43)" T_Lut="56(56)" T_Bsram="2(2)"/>
+    <SubModule name="echo_0" Register="32" Lut="21" T_Register="155(32)" T_Alu="52(0)" T_Lut="147(21)" T_MULTALU27X18="1(0)" T_Bsram="4(0)">
+        <SubModule name="delay_echo" Register="2" T_Register="107(2)" T_Alu="35(0)" T_Lut="126(0)" T_Bsram="4(0)">
+            <SubModule name="delay_0" Register="105" Alu="35" Lut="126" Bsram="4" T_Register="105(105)" T_Alu="35(35)" T_Lut="126(126)" T_Bsram="4(4)"/>
+        </SubModule>
+        <SubModule name="gain_inst" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="echo_1" Register="32" Lut="16" T_Register="154(32)" T_Alu="52(0)" T_Lut="142(16)" T_MULTALU27X18="1(0)" T_Bsram="4(0)">
+        <SubModule name="delay_echo" Register="1" T_Register="106(1)" T_Alu="35(0)" T_Lut="126(0)" T_Bsram="4(0)">
+            <SubModule name="delay_0" Register="105" Alu="35" Lut="126" Bsram="4" T_Register="105(105)" T_Alu="35(35)" T_Lut="126(126)" T_Bsram="4(4)"/>
+        </SubModule>
+        <SubModule name="gain_inst" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="reverb_0" Register="32" Lut="21" T_Register="266(32)" T_Alu="922(0)" T_Lut="198(21)" T_Bsram="4(0)">
+        <SubModule name="delay_reverb" Register="1" T_Register="106(1)" T_Alu="35(0)" T_Lut="126(0)" T_Bsram="4(0)">
+            <SubModule name="delay_0" Register="105" Alu="35" Lut="126" Bsram="4" T_Register="105(105)" T_Alu="35(35)" T_Lut="126(126)" T_Bsram="4(4)"/>
+        </SubModule>
+        <SubModule name="gain_inst" Register="16" Alu="37" Lut="47" T_Register="16(16)" T_Alu="37(37)" T_Lut="47(47)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+        <SubModule name="lowp_0" Register="96" Alu="833" Lut="4" T_Register="96(96)" T_Alu="833(833)" T_Lut="4(4)"/>
+    </SubModule>
+    <SubModule name="reverb_1" Register="32" Lut="16" T_Register="266(32)" T_Alu="922(0)" T_Lut="193(16)" T_Bsram="4(0)">
+        <SubModule name="delay_reverb" Register="1" T_Register="106(1)" T_Alu="35(0)" T_Lut="126(0)" T_Bsram="4(0)">
+            <SubModule name="delay_0" Register="105" Alu="35" Lut="126" Bsram="4" T_Register="105(105)" T_Alu="35(35)" T_Lut="126(126)" T_Bsram="4(4)"/>
+        </SubModule>
+        <SubModule name="gain_inst" Register="16" Alu="37" Lut="47" T_Register="16(16)" T_Alu="37(37)" T_Lut="47(47)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+        <SubModule name="lowp_0" Register="96" Alu="833" Lut="4" T_Register="96(96)" T_Alu="833(833)" T_Lut="4(4)"/>
+    </SubModule>
+    <SubModule name="chorus_0" Register="16" Lut="35" T_Register="214(16)" T_Alu="155(0)" T_Lut="233(35)" T_Bsram="6(0)">
+        <SubModule name="delay_chorus" Register="48" Alu="72" Lut="75" Bsram="4" T_Register="48(48)" T_Alu="72(72)" T_Lut="75(75)" T_Bsram="4(4)"/>
+        <SubModule name="DDS_cho" Register="118" Alu="29" Lut="76" Bsram="2" T_Register="118(118)" T_Alu="29(29)" T_Lut="76(76)" T_Bsram="2(2)"/>
+        <SubModule name="gain_inst" Register="16" Alu="37" Lut="47" T_Register="16(16)" T_Alu="37(37)" T_Lut="47(47)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="chorus_1" Register="16" Lut="27" T_Register="211(16)" T_Alu="155(0)" T_Lut="220(27)" T_Bsram="6(0)">
+        <SubModule name="delay_chorus" Register="45" Alu="72" Lut="70" Bsram="4" T_Register="45(45)" T_Alu="72(72)" T_Lut="70(70)" T_Bsram="4(4)"/>
+        <SubModule name="DDS_cho" Register="118" Alu="29" Lut="76" Bsram="2" T_Register="118(118)" T_Alu="29(29)" T_Lut="76(76)" T_Bsram="2(2)"/>
+        <SubModule name="gain_inst" Register="16" Alu="37" Lut="47" T_Register="16(16)" T_Alu="37(37)" T_Lut="47(47)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="phaser_0" Register="16" Lut="24" T_Register="256(16)" T_Alu="830(0)" T_Lut="824(24)" T_Bsram="1(0)">
+        <SubModule name="dds" Register="128" Alu="31" Lut="73" Bsram="1" T_Register="128(128)" T_Alu="31(31)" T_Lut="73(73)" T_Bsram="1(1)"/>
+        <SubModule name="allpass_filters[0].filter_instance" Register="16" Alu="133" Lut="136" T_Register="16(16)" T_Alu="133(133)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[1].filter_instance" Register="16" Alu="149" Lut="136" T_Register="16(16)" T_Alu="149(149)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[2].filter_instance" Register="16" Alu="149" Lut="136" T_Register="16(16)" T_Alu="149(149)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[3].filter_instance" Register="16" Alu="149" Lut="136" T_Register="16(16)" T_Alu="149(149)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[4].filter_instance" Register="16" Alu="165" Lut="136" T_Register="16(16)" T_Alu="165(165)" T_Lut="136(136)"/>
+        <SubModule name="gain_inst" Register="16" Alu="37" Lut="47" T_Register="16(16)" T_Alu="37(37)" T_Lut="47(47)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="phaser_1" Register="16" Lut="16" T_Register="256(16)" T_Alu="830(0)" T_Lut="816(16)" T_Bsram="1(0)">
+        <SubModule name="dds" Register="128" Alu="31" Lut="73" Bsram="1" T_Register="128(128)" T_Alu="31(31)" T_Lut="73(73)" T_Bsram="1(1)"/>
+        <SubModule name="allpass_filters[0].filter_instance" Register="16" Alu="133" Lut="136" T_Register="16(16)" T_Alu="133(133)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[1].filter_instance" Register="16" Alu="149" Lut="136" T_Register="16(16)" T_Alu="149(149)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[2].filter_instance" Register="16" Alu="149" Lut="136" T_Register="16(16)" T_Alu="149(149)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[3].filter_instance" Register="16" Alu="149" Lut="136" T_Register="16(16)" T_Alu="149(149)" T_Lut="136(136)"/>
+        <SubModule name="allpass_filters[4].filter_instance" Register="16" Alu="165" Lut="136" T_Register="16(16)" T_Alu="165(165)" T_Lut="136(136)"/>
+        <SubModule name="gain_inst" Register="16" Alu="37" Lut="47" T_Register="16(16)" T_Alu="37(37)" T_Lut="47(47)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="eq_crtl_0" Register="30" Lut="50" T_Register="2046(30)" T_Alu="159(0)" T_Lut="1723(50)" T_MULT12X12="2(0)" T_MULT27X36="5(0)" T_MULTADDALU12X12="1(0)" T_Bsram="5(0)">
+        <SubModule name="U1" Register="2016" Alu="159" Lut="1673" MULT12X12="2" MULT27X36="5" MULTADDALU12X12="1" Bsram="5" T_Register="2016(2016)" T_Alu="159(159)" T_Lut="1673(1673)" T_MULT12X12="2(2)" T_MULT27X36="5(5)" T_MULTADDALU12X12="1(1)" T_Bsram="5(5)"/>
+    </SubModule>
+    <SubModule name="eq_crtl_1" Register="30" Lut="50" T_Register="2046(30)" T_Alu="159(0)" T_Lut="1723(50)" T_MULT12X12="2(0)" T_MULT27X36="5(0)" T_MULTADDALU12X12="1(0)" T_Bsram="5(0)">
+        <SubModule name="U1" Register="2016" Alu="159" Lut="1673" MULT12X12="2" MULT27X36="5" MULTADDALU12X12="1" Bsram="5" T_Register="2016(2016)" T_Alu="159(159)" T_Lut="1673(1673)" T_MULT12X12="2(2)" T_MULT27X36="5(5)" T_MULTADDALU12X12="1(1)" T_Bsram="5(5)"/>
+    </SubModule>
+    <SubModule name="uart_1" Register="75" Lut="7" T_Register="518(75)" T_Lut="441(7)">
+        <SubModule name="uart_data_rx" Register="374" Lut="313" T_Register="443(374)" T_Lut="434(313)">
+            <SubModule name="uart_byte_rx" Register="69" Lut="121" T_Register="69(69)" T_Lut="121(121)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="tap_6_rm_0" Register="128" Alu="179" Lut="189" T_Register="128(128)" T_Alu="179(179)" T_Lut="189(189)"/>
+    <SubModule name="tap_6_rm_1" Register="128" Alu="179" Lut="188" T_Register="128(128)" T_Alu="179(179)" T_Lut="188(188)"/>
+    <SubModule name="sampe_switch" Register="163" Lut="288" T_Register="2321(163)" T_Alu="1054(0)" T_Lut="2529(288)">
+        <SubModule name="counter" Register="6" Lut="12" T_Register="6(6)" T_Lut="12(12)"/>
+        <SubModule name="filter_0" T_Register="1076(0)" T_Alu="527(0)" T_Lut="1292(0)">
+            <SubModule name="coeffs_inst" Lut="291" T_Lut="291(291)"/>
+            <SubModule name="delay_pipeline_inst" Register="1024" Lut="512" T_Register="1024(1024)" T_Lut="512(512)"/>
+            <SubModule name="compute_inst" Register="52" Alu="527" Lut="489" T_Register="52(52)" T_Alu="527(527)" T_Lut="489(489)"/>
+        </SubModule>
+        <SubModule name="filter_1" T_Register="1076(0)" T_Alu="527(0)" T_Lut="937(0)">
+            <SubModule name="coeffs_inst" Lut="70" T_Lut="70(70)"/>
+            <SubModule name="delay_pipeline_inst" Register="1024" Lut="512" T_Register="1024(1024)" T_Lut="512(512)"/>
+            <SubModule name="compute_inst" Register="52" Alu="527" Lut="355" T_Register="52(52)" T_Alu="527(527)" T_Lut="355(355)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_rx" Register="81" Lut="71" T_Register="188(81)" T_Alu="16(0)" T_Lut="130(71)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="46" Lut="46" T_Register="153(46)" T_Alu="16(0)" T_Lut="105(46)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="gw_gao_inst_0" Register="388" Alu="15" Lut="464" Bsram="9" T_Register="388(388)" T_Alu="15(15)" T_Lut="464(464)" T_Bsram="9(9)"/>
+</Module>

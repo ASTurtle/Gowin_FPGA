@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_lookback" Register="51" Lut="4" T_Register="1377(51)" T_Alu="223(0)" T_Lut="1001(4)" T_MULTALU27X18="28(0)" T_Bsram="20(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="74(17)" T_Alu="15(15)" T_Lut="183(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="9" Lut="18" T_Register="57(9)" T_Lut="173(18)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="74" T_Register="48(25)" T_Lut="155(74)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="81" T_Register="23(23)" T_Lut="81(81)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="lms_0" Register="24" Alu="16" T_Register="383(24)" T_Alu="144(16)" T_Lut="73(0)" T_MULTALU27X18="28(0)">
+        <SubModule name="l_inst" Register="35" Lut="9" T_Register="359(35)" T_Alu="128(0)" T_Lut="73(9)" T_MULTALU27X18="28(0)">
+            <SubModule name="bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[1].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[2].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[3].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[4].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[5].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[6].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[7].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[8].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[9].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[10].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[11].bg_inst" Register="2" Lut="2" T_Register="2(2)" T_Lut="2(2)" T_MULTALU27X18="2(0)">
+                <SubModule name="m1" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[12].bg_inst" Register="75" Alu="32" Lut="2" T_Register="75(75)" T_Alu="32(32)" T_Lut="10(2)" T_MULTALU27X18="1(0)">
+                <SubModule name="m1" T_Lut="8(0)">
+                    <SubModule name="lpm_mult" Lut="8" T_Lut="8(8)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[13].bg_inst" Register="75" Alu="32" Lut="2" T_Register="75(75)" T_Alu="32(32)" T_Lut="10(2)" T_MULTALU27X18="1(0)">
+                <SubModule name="m1" T_Lut="8(0)">
+                    <SubModule name="lpm_mult" Lut="8" T_Lut="8(8)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[14].bg_inst" Register="75" Alu="32" Lut="2" T_Register="75(75)" T_Alu="32(32)" T_Lut="10(2)" T_MULTALU27X18="1(0)">
+                <SubModule name="m1" T_Lut="8(0)">
+                    <SubModule name="lpm_mult" Lut="8" T_Lut="8(8)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="order[15].bg_inst" Register="75" Alu="32" Lut="2" T_Register="75(75)" T_Alu="32(32)" T_Lut="10(2)" T_MULTALU27X18="1(0)">
+                <SubModule name="m1" T_Lut="8(0)">
+                    <SubModule name="lpm_mult" Lut="8" T_Lut="8(8)"/>
+                </SubModule>
+                <SubModule name="m2" T_MULTALU27X18="1(0)">
+                    <SubModule name="lpm_mult" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+                </SubModule>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="noise_audio" T_Register="48(0)" T_Alu="17(0)" T_Lut="1(0)">
+        <SubModule name="lfsr_0" Register="32" Lut="1" T_Register="32(32)" T_Lut="1(1)"/>
+        <SubModule name="adder_0" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="i2s_rx" Register="81" Lut="71" T_Register="188(81)" T_Alu="16(0)" T_Lut="130(71)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="30" Lut="38" T_Register="121(30)" T_Alu="16(0)" T_Lut="96(38)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="16" T_Register="91(16)" T_Alu="16(0)" T_Lut="58(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="58" T_Register="75(75)" T_Alu="16(16)" T_Lut="58(58)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="gw_gao_inst_0" Register="512" Alu="15" Lut="514" Bsram="17" T_Register="512(512)" T_Alu="15(15)" T_Lut="514(514)" T_Bsram="17(17)"/>
+</Module>

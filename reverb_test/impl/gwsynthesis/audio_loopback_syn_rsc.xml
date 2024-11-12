@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_lookback" Register="98" Lut="3" T_Register="3691(98)" T_Alu="818(0)" T_Lut="1423(3)" T_MULTALU27X18="18(0)" T_Bsram="4(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="73(17)" T_Alu="15(15)" T_Lut="181(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="8" Lut="14" T_Register="56(8)" T_Lut="171(14)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="70" T_Register="48(25)" T_Lut="157(70)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="87" T_Register="23(23)" T_Lut="87(87)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="filter_1" Register="1361" Alu="366" Lut="264" MULTALU27X18="9" T_Register="1361(1361)" T_Alu="366(366)" T_Lut="264(264)" T_MULTALU27X18="9(9)"/>
+    <SubModule name="filter_2" Register="1361" Alu="366" Lut="264" MULTALU27X18="9" T_Register="1361(1361)" T_Alu="366(366)" T_Lut="264(264)" T_MULTALU27X18="9(9)"/>
+    <SubModule name="reverb" Register="32" T_Register="457(32)" T_Alu="39(0)" T_Lut="480(0)" T_Bsram="1(0)">
+        <SubModule name="delay_inst" Register="361" Alu="7" Lut="480" Bsram="1" T_Register="361(361)" T_Alu="7(7)" T_Lut="480(480)" T_Bsram="1(1)"/>
+        <SubModule name="add_inst" Register="64" Alu="32" T_Register="64(64)" T_Alu="32(32)"/>
+    </SubModule>
+    <SubModule name="i2s_rx" Register="81" Lut="64" T_Register="188(81)" T_Alu="16(0)" T_Lut="124(64)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="60(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="60" T_Register="75(75)" T_Alu="16(16)" T_Lut="60(60)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="46" Lut="47" T_Register="153(46)" T_Alu="16(0)" T_Lut="107(47)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="60(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="60" T_Register="75(75)" T_Alu="16(16)" T_Lut="60(60)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+</Module>

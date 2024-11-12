@@ -1,0 +1,1808 @@
+[
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/amplifer.v",
+  "InstLine" : 1,
+  "InstName" : "amplifier",
+  "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/amplifer.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "amplifier"
+ },
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/band_filter.v",
+  "InstLine" : 1,
+  "InstName" : "band_filter",
+  "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/band_filter.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "band_filter"
+ },
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/delay_0.v",
+  "InstLine" : 1247,
+  "InstName" : "delay_0",
+  "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/delay_0.v",
+  "ModuleLine" : 1247,
+  "ModuleName" : "delay_0",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/delay_0.v",
+    "InstLine" : 1276,
+    "InstName" : "fifo_inst",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/delay_0.v",
+    "ModuleLine" : 13,
+    "ModuleName" : "~fifo.delay_0"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms_top.v",
+  "InstLine" : 1,
+  "InstName" : "lms_top",
+  "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/lms_top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "lms_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms_top.v",
+    "InstLine" : 11,
+    "InstName" : "lms_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/lms.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "lms",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms.v",
+      "InstLine" : 39,
+      "InstName" : "l_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "lms16_order",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 80,
+        "InstName" : "bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[1].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[2].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[3].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[4].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[5].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[6].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[7].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[8].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[9].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[10].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[11].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[12].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[13].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[14].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[15].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/lms_top.v",
+    "InstLine" : 24,
+    "InstName" : "noise_audio",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/noise_audio.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "noise_audio",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/noise_audio.v",
+      "InstLine" : 10,
+      "InstName" : "lfsr_0",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/lfsr_generator.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "lfsr_generator"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/noise_audio.v",
+      "InstLine" : 17,
+      "InstName" : "adder_0",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/noise_audio.v",
+      "InstLine" : 24,
+      "InstName" : "adder_1",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/remote_filter.v",
+  "InstLine" : 1,
+  "InstName" : "remote_filter",
+  "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/remote_filter.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "remote_filter",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/remote_filter.v",
+    "InstLine" : 25,
+    "InstName" : "counter",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/counter.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "counter"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/remote_filter.v",
+    "InstLine" : 39,
+    "InstName" : "filter_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "filter",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "InstLine" : 36,
+      "InstName" : "coeffs_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/coeffs.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "coeffs"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "InstLine" : 51,
+      "InstName" : "delay_pipeline_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay_pipeline.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay_pipeline"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "InstLine" : 68,
+      "InstName" : "compute_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/compute.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "compute"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/remote_filter.v",
+    "InstLine" : 56,
+    "InstName" : "filter_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "filter",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "InstLine" : 36,
+      "InstName" : "coeffs_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/coeffs.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "coeffs"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "InstLine" : 51,
+      "InstName" : "delay_pipeline_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay_pipeline.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay_pipeline"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "InstLine" : 68,
+      "InstName" : "compute_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/compute.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "compute"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/sample_filter.v",
+  "InstLine" : 3,
+  "InstName" : "sample_filter",
+  "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/sample_filter.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "sample_filter"
+ },
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+  "InstLine" : 1,
+  "InstName" : "audio_effect",
+  "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "audio_effect",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 43,
+    "InstName" : "Gowin_PLL",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 50,
+    "InstName" : "WM8960_Init",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/WM8960_Init.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "WM8960_Init",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/WM8960_Init.v",
+      "InstLine" : 56,
+      "InstName" : "I2C_Init_Dev",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/I2C_Init_Dev.v",
+      "ModuleLine" : 16,
+      "ModuleName" : "I2C_Init_Dev",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 108,
+        "InstName" : "wm8960_init_table",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/wm8960_init_table.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "wm8960_init_table"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 120,
+        "InstName" : "i2c_control",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/i2c_control.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "i2c_control",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/i2c_control.v",
+          "InstLine" : 72,
+          "InstName" : "i2c_bit_shift",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/i2c_bit_shift.v",
+          "ModuleLine" : 16,
+          "ModuleName" : "i2c_bit_shift"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 124,
+    "InstName" : "compressor_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/compressor.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "compressor",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/compressor.v",
+      "InstLine" : 42,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 132,
+    "InstName" : "compressor_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/compressor.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "compressor",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/compressor.v",
+      "InstLine" : 42,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 142,
+    "InstName" : "distortion_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/distortion.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "distortion"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 150,
+    "InstName" : "distortion_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/distortion.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "distortion"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 161,
+    "InstName" : "echo_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "echo",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+      "InstLine" : 46,
+      "InstName" : "delay_echo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+        "InstLine" : 34,
+        "InstName" : "delay_0",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+        "ModuleLine" : 1012,
+        "ModuleName" : "fifo_4096",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "InstLine" : 1039,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.fifo_4096"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+      "InstLine" : 55,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+      "InstLine" : 64,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 175,
+    "InstName" : "echo_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "echo",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+      "InstLine" : 46,
+      "InstName" : "delay_echo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+        "InstLine" : 34,
+        "InstName" : "delay_0",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+        "ModuleLine" : 1012,
+        "ModuleName" : "fifo_4096",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "InstLine" : 1039,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.fifo_4096"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+      "InstLine" : 55,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+      "InstLine" : 64,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 189,
+    "InstName" : "reverb_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "reverb",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 47,
+      "InstName" : "delay_reverb",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+        "InstLine" : 34,
+        "InstName" : "delay_0",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+        "ModuleLine" : 1012,
+        "ModuleName" : "fifo_4096",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "InstLine" : 1039,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.fifo_4096"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 56,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 65,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 73,
+      "InstName" : "lowp_0",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/low_pass.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "filter_lowpass"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 204,
+    "InstName" : "reverb_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "reverb",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 47,
+      "InstName" : "delay_reverb",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+        "InstLine" : 34,
+        "InstName" : "delay_0",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+        "ModuleLine" : 1012,
+        "ModuleName" : "fifo_4096",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "InstLine" : 1039,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.fifo_4096"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 56,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 65,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+      "InstLine" : 73,
+      "InstName" : "lowp_0",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/low_pass.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "filter_lowpass"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 218,
+    "InstName" : "chorus_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "chorus",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 33,
+      "InstName" : "delay_chorus",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay_changable.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay_changable"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 42,
+      "InstName" : "DDS_cho",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds/dds.v",
+      "ModuleLine" : 878,
+      "ModuleName" : "DDS_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/dds/dds.v",
+        "InstLine" : 897,
+        "InstName" : "DDS",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds/dds.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "~DDS.DDS_Top"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 53,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 62,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 233,
+    "InstName" : "chorus_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "chorus",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 33,
+      "InstName" : "delay_chorus",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay_changable.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay_changable"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 42,
+      "InstName" : "DDS_cho",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds/dds.v",
+      "ModuleLine" : 878,
+      "ModuleName" : "DDS_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/dds/dds.v",
+        "InstLine" : 897,
+        "InstName" : "DDS",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds/dds.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "~DDS.DDS_Top"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 53,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+      "InstLine" : 62,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 247,
+    "InstName" : "phaser_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "phaser",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 73,
+      "InstName" : "dds",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds_phaser/dds/dds_p.v",
+      "ModuleLine" : 633,
+      "ModuleName" : "DDS_p",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/dds_phaser/dds/dds_p.v",
+        "InstLine" : 652,
+        "InstName" : "DDS",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds_phaser/dds/dds_p.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "~DDS.DDS_p"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[0].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[1].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[2].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[3].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[4].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 96,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 105,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 259,
+    "InstName" : "phaser_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "phaser",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 73,
+      "InstName" : "dds",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds_phaser/dds/dds_p.v",
+      "ModuleLine" : 633,
+      "ModuleName" : "DDS_p",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/dds_phaser/dds/dds_p.v",
+        "InstLine" : 652,
+        "InstName" : "DDS",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/dds_phaser/dds/dds_p.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "~DDS.DDS_p"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[0].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[1].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[2].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[3].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 86,
+      "InstName" : "allpass_filters[4].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 96,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+      "InstLine" : 105,
+      "InstName" : "add_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 271,
+    "InstName" : "eq_crtl_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/eq_crtl.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "eq_crtl",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/eq_crtl.v",
+      "InstLine" : 92,
+      "InstName" : "U1",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/equalizer/equalizer.v",
+      "ModuleLine" : 11723,
+      "ModuleName" : "Equalizer_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/equalizer/equalizer.v",
+        "InstLine" : 11750,
+        "InstName" : "Equalizer_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/equalizer/equalizer.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "(Equalizer)/(Equalizer_Top)"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 279,
+    "InstName" : "eq_crtl_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/eq_crtl.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "eq_crtl",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/eq_crtl.v",
+      "InstLine" : 92,
+      "InstName" : "U1",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/equalizer/equalizer.v",
+      "ModuleLine" : 11723,
+      "ModuleName" : "Equalizer_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/equalizer/equalizer.v",
+        "InstLine" : 11750,
+        "InstName" : "Equalizer_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/equalizer/equalizer.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "(Equalizer)/(Equalizer_Top)"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 305,
+    "InstName" : "uart_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/uart_cmd.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_cmd",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/uart_cmd.v",
+      "InstLine" : 36,
+      "InstName" : "uart_data_rx",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/data_rx.v",
+      "ModuleLine" : 41,
+      "ModuleName" : "uart_data_rx",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/data_rx.v",
+        "InstLine" : 72,
+        "InstName" : "uart_byte_rx",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/byte_rx.v",
+        "ModuleLine" : 20,
+        "ModuleName" : "uart_byte_rx"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 313,
+    "InstName" : "tap_6_rm_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/tap6_rm.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "tap_6_rm"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 323,
+    "InstName" : "tap_6_rm_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/tap6_rm.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "tap_6_rm"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 335,
+    "InstName" : "sampe_switch",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/sample_switch.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "sample_switch",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/sample_switch.v",
+      "InstLine" : 118,
+      "InstName" : "counter",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/counter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "counter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/sample_switch.v",
+      "InstLine" : 132,
+      "InstName" : "filter_0",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "filter",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+        "InstLine" : 36,
+        "InstName" : "coeffs_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/coeffs.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "coeffs"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+        "InstLine" : 51,
+        "InstName" : "delay_pipeline_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay_pipeline.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "delay_pipeline"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+        "InstLine" : 68,
+        "InstName" : "compute_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/compute.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "compute"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/sample_switch.v",
+      "InstLine" : 149,
+      "InstName" : "filter_1",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "filter",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+        "InstLine" : 36,
+        "InstName" : "coeffs_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/coeffs.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "coeffs"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+        "InstLine" : 51,
+        "InstName" : "delay_pipeline_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/delay_pipeline.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "delay_pipeline"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+        "InstLine" : 68,
+        "InstName" : "compute_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/compute.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "compute"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 366,
+    "InstName" : "i2s_rx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/i2s/i2s_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/i2s/i2s_rx.v",
+      "InstLine" : 122,
+      "InstName" : "adc_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+    "InstLine" : 381,
+    "InstName" : "i2s_tx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/i2s/i2s_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/i2s/i2s_tx.v",
+      "InstLine" : 113,
+      "InstName" : "dac_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/rubbish/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

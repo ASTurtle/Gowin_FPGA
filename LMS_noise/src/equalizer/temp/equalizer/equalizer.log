@@ -1,0 +1,130 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'
+Analyzing included file 'define.vh'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":1)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":1)
+Analyzing included file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\static_macro_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":2)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":2)
+Analyzing included file 'parameter.vh'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":21)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":21)
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v'
+Analyzing included file 'define.vh'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Analyzing included file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\static_macro_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Undeclared symbol 'gainwe_posedge', assumed default net type 'wire'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Compiling module 'Equalizer'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer_wrap.v":3)
+Compiling module '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+Extracting RAM for identifier '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+WARN  (EX3792) : Literal value 18'b10000001010010010101 truncated to fit in 18 bits
+WARN  (EX2526) : Entry size ** at **:** does not match memory width **("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+WARN  (EX3792) : Literal value 18'b10000000101001010001 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001000101111100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000010010010011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001011111001011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000011010100110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001100011010001 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000011110101111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001101000111111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000100100100010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001110000010111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000101011111110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000010100110010100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001000000100111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000011101001010101 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001100011001011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10001001010110001001 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000011011010110111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10010110110100011000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10001010001000011011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10100111010010010010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10011001101111110100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10111010000000011000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10110000000000110110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11010010101101110010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11001100110110010110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11101111111010001010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11101110000101010010 truncated to fit in 18 bits
+WARN  (EX3791) : Expression size ** truncated to fit in target size **("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+WARN  (EX3792) : Literal value 18'b10000001010010000010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000010100100110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000101001100101 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001000101111100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000011010000010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000010010010011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001011111001011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000100010101100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000011010100110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001100011010001 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000100010101100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000011110101111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001101000111111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000100010101011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000100100100010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001110000010111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000100010101011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000000101011111110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000010100110010100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000110011111010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001000000100111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000011101001010101 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000001000101000011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000001100011001011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10001001010110001001 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000011001100100101 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10000011011010110111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10010110110100011000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000111101110000011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10001010001000011011 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10100111010010010010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01001001110001000110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10011001101111110100 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10111010000000011000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01001001001000110000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b10110000000000110110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11010010101101110010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01001000010010100110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11001100110110010110 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11101111111010001010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000111010000110101 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b11101110000101010010 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01001001000000000111 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01000000000000000000 truncated to fit in 18 bits
+WARN  (EX3792) : Literal value 18'b01101011111010101010 truncated to fit in 18 bits
+NOTE  (EX0101) : Current top module is "Equalizer"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "(delay)/(Equalizer)(DATA_WIDTH=1)" instantiated to "delay_gainwe" is swept in optimizing("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\ipcore\EQUALIZER\data\Equalizer.v":544)
+[95%] Generate netlist file "C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (5)\src\equalizer\temp\equalizer\equalizer.vg" completed
+Generate template file "C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (5)\src\equalizer\temp\equalizer\equalizer_tmp.v" completed
+[100%] Generate report file "C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (5)\src\equalizer\temp\equalizer\equalizer_syn.rpt.html" completed
+GowinSynthesis finish

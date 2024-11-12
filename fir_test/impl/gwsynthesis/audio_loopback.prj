@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5A-25A" package="UBGA324" speed="2" partNumber="GW5A-LV25UG324C2/I1"/>
+    <FileList>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\WM8960_Init\I2C_Init_Dev.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\WM8960_Init\WM8960_Init.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\WM8960_Init\i2c_bit_shift.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\WM8960_Init\i2c_control.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\WM8960_Init\wm8960_init_table.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\advanced_fir_filter\advanced_fir_filter.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\fifo\async_fifo.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\fifo\async_fifo_ctrl.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\fifo\dpram.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\gowin_pll\gowin_pll.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\i2s\i2s_rx.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\i2s\i2s_tx.v" type="verilog"/>
+        <File path="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\src\top\audio_lookback.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="enable_dsrm" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\Users\Asus\Desktop\gowin\02code\ch62_audio_loopback (3)\impl\gwsynthesis\audio_loopback.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="audio_lookback"/>
+        <Option type="vcc" value="0.9"/>
+        <Option type="vccx" value="3.3"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

@@ -1,0 +1,81 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/I2C_Init_Dev.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/WM8960_Init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/i2c_bit_shift.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/i2c_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/wm8960_init_table.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/add_sub.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/delay.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/dpram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo_top/delay_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/gains.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/i2s/i2s_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/i2s/i2s_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

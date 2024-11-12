@@ -1,0 +1,15 @@
+-d D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\reverb_test\impl\gwsynthesis\audio_loopback.vg
+-p GW5A-25A-UBGA324-2
+-pn GW5A-LV25UG324C2/I1
+-cst D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\reverb_test\src\audio_loopback.cst
+-cfg D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\reverb_test\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-enable_dsrm 0

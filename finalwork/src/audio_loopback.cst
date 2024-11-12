@@ -1,0 +1,134 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: V1.9.9 Beta-6
+//Part Number: GW5A-LV25UG324C2/I1
+//Device: GW5A-25
+//Device Version: A
+//Created Time: Thu 01 04 16:42:54 2024
+
+IO_LOC "I2S_MCLK" J6;
+IO_PORT "I2S_MCLK" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "I2S_DACDAT" E3;
+IO_PORT "I2S_DACDAT" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "led" D14;
+IO_PORT "led" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "iic_0_sda" H5;
+IO_PORT "iic_0_sda" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "iic_0_scl" L7;
+IO_PORT "iic_0_scl" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "I2S_DACLRC" K6;
+IO_PORT "I2S_DACLRC" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "I2S_BCLK" K5;
+IO_PORT "I2S_BCLK" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "I2S_ADCLRC" J7;
+IO_PORT "I2S_ADCLRC" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "I2S_ADCDAT" H3;
+IO_PORT "I2S_ADCDAT" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "reset_n" C15;
+IO_PORT "reset_n" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "clk" T9;
+IO_PORT "clk" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "uart_rx" U8;
+IO_PORT "uart_rx" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+
+
+
+
+
+IO_LOC "resample_data[0]" C17;
+IO_PORT "resample_data[0]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[1]" C18;
+IO_PORT "resample_data[1]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[2]" F14;
+IO_PORT "resample_data[2]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[3]" G14;
+IO_PORT "resample_data[3]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[4]" D17;
+IO_PORT "resample_data[4]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[5]" D18;
+IO_PORT "resample_data[5]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[6]" G16;
+IO_PORT "resample_data[6]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[7]" G18;
+IO_PORT "resample_data[7]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[8]" F17;
+IO_PORT "resample_data[8]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[9]" F18;
+IO_PORT "resample_data[9]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[10]" H13;
+IO_PORT "resample_data[10]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[11]" H14;
+IO_PORT "resample_data[11]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[12]" K15;
+IO_PORT "resample_data[12]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[13]" K16;
+IO_PORT "resample_data[13]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[14]" J13;
+IO_PORT "resample_data[14]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[15]" K14;
+IO_PORT "resample_data[15]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[16]" K12;
+IO_PORT "resample_data[16]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[17]" K13;
+IO_PORT "resample_data[17]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[18]" L12;
+IO_PORT "resample_data[18]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[19]" L13;
+IO_PORT "resample_data[19]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[20]" H17;
+IO_PORT "resample_data[20]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[21]" H18;
+IO_PORT "resample_data[21]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[22]" K17;
+IO_PORT "resample_data[22]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[23]" K18;
+IO_PORT "resample_data[23]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[24]" L17;
+IO_PORT "resample_data[24]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[25]" L18;
+IO_PORT "resample_data[25]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[26]" N17;
+IO_PORT "resample_data[26]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[27]" N18;
+IO_PORT "resample_data[27]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[28]" P17;
+IO_PORT "resample_data[28]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[29]" P18;
+IO_PORT "resample_data[29]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[30]" P15;
+IO_PORT "resample_data[30]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "resample_data[31]" P16;
+IO_PORT "resample_data[31]" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+//resample_data[0]:	C17;
+//resample_data[1]:	C18
+//resample_data[2]:	F14
+//resample_data[3]:	G14
+//resample_data[4]:	D17
+//resample_data[5]:	D18
+//resample_data[6]:	G16
+//resample_data[7]:	G18
+//resample_data[8]:	F17
+//resample_data[9]:	F18
+//resample_data[10]:	H13
+//resample_data[11]:	H14
+//resample_data[12]:	K15
+//resample_data[13]:	K16
+//resample_data[14]:	J13
+//resample_data[15]:	K14
+//resample_data[16]:	K12
+//resample_data[17]:	K13
+//resample_data[18]:	L12
+//resample_data[19]:	L13
+//resample_data[20]:	H17
+//resample_data[21]:	H18
+//resample_data[22]:	K17
+//resample_data[23]:	K18
+//resample_data[24]:	L17
+//resample_data[25]:	L18
+//resample_data[26]:	N17
+//resample_data[27]:	N18
+//resample_data[28]:	P17
+//resample_data[29]:	P18
+//resample_data[30]:	P15
+//resample_data[31]:	P16

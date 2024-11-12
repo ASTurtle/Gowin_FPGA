@@ -1,0 +1,73 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/WM8960_Init/I2C_Init_Dev.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/WM8960_Init/WM8960_Init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/WM8960_Init/i2c_bit_shift.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/WM8960_Init/i2c_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/WM8960_Init/wm8960_init_table.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/compressor.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/fifo/async_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/fifo/async_fifo_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/fifo/dpram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/gains.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/i2s/i2s_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/i2s/i2s_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/signed_multiplier.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/src/top/audio_lookback.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/compressor/impl/temp/rtl_parser.result",
+ "Top" : "audio_lookback",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

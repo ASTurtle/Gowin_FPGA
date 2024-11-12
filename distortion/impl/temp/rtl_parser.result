@@ -1,0 +1,146 @@
+[
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/top/audio_lookback.v",
+  "InstLine" : 1,
+  "InstName" : "audio_lookback",
+  "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/top/audio_lookback.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "audio_lookback",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/top/audio_lookback.v",
+    "InstLine" : 18,
+    "InstName" : "Gowin_PLL",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/top/audio_lookback.v",
+    "InstLine" : 24,
+    "InstName" : "WM8960_Init",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/WM8960_Init.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "WM8960_Init",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/WM8960_Init.v",
+      "InstLine" : 56,
+      "InstName" : "I2C_Init_Dev",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/I2C_Init_Dev.v",
+      "ModuleLine" : 16,
+      "ModuleName" : "I2C_Init_Dev",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 108,
+        "InstName" : "wm8960_init_table",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/wm8960_init_table.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "wm8960_init_table"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 120,
+        "InstName" : "i2c_control",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/i2c_control.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "i2c_control",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/i2c_control.v",
+          "InstLine" : 72,
+          "InstName" : "i2c_bit_shift",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/WM8960_Init/i2c_bit_shift.v",
+          "ModuleLine" : 16,
+          "ModuleName" : "i2c_bit_shift"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/top/audio_lookback.v",
+    "InstLine" : 74,
+    "InstName" : "distortion_effect_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/distortion.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "distortion"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/top/audio_lookback.v",
+    "InstLine" : 87,
+    "InstName" : "i2s_rx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/i2s/i2s_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/i2s/i2s_rx.v",
+      "InstLine" : 122,
+      "InstName" : "adc_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/top/audio_lookback.v",
+    "InstLine" : 102,
+    "InstName" : "i2s_tx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/i2s/i2s_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/i2s/i2s_tx.v",
+      "InstLine" : 113,
+      "InstName" : "dac_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/distortion/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

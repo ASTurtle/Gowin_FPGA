@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_lookback" Register="34" Lut="4" T_Register="1049(34)" T_Alu="111(0)" T_Lut="1084(4)" T_MULTALU27X18="1(0)" T_Bsram="47(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="74(17)" T_Alu="15(15)" T_Lut="174(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="9" Lut="18" T_Register="57(9)" T_Lut="164(18)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="67" T_Register="48(25)" T_Lut="146(67)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="79" T_Register="23(23)" T_Lut="79(79)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="compressor_0" Register="65" Alu="48" Lut="139" T_Register="81(65)" T_Alu="48(48)" T_Lut="139(139)" T_MULTALU27X18="1(0)">
+        <SubModule name="gain_inst" Register="16" MULTALU27X18="1" T_Register="16(16)" T_MULTALU27X18="1(1)"/>
+    </SubModule>
+    <SubModule name="i2s_rx" Register="49" Lut="50" T_Register="140(49)" T_Alu="16(0)" T_Lut="109(50)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="16" T_Register="91(16)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="30" Lut="39" T_Register="121(30)" T_Alu="16(0)" T_Lut="97(39)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="16" T_Register="91(16)" T_Alu="16(0)" T_Lut="58(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="58" T_Register="75(75)" T_Alu="16(16)" T_Lut="58(58)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="gw_gao_inst_0" Register="599" Alu="16" Lut="561" Bsram="44" T_Register="599(599)" T_Alu="16(16)" T_Lut="561(561)" T_Bsram="44(44)"/>
+</Module>

@@ -1,0 +1,946 @@
+[
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+  "InstLine" : 1,
+  "InstName" : "audio_lookback",
+  "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "audio_lookback",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+    "InstLine" : 21,
+    "InstName" : "Gowin_PLL",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+    "InstLine" : 27,
+    "InstName" : "WM8960_Init",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/WM8960_Init.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "WM8960_Init",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/WM8960_Init.v",
+      "InstLine" : 56,
+      "InstName" : "I2C_Init_Dev",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/I2C_Init_Dev.v",
+      "ModuleLine" : 16,
+      "ModuleName" : "I2C_Init_Dev",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 108,
+        "InstName" : "wm8960_init_table",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/wm8960_init_table.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "wm8960_init_table"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 120,
+        "InstName" : "i2c_control",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/i2c_control.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "i2c_control",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/i2c_control.v",
+          "InstLine" : 72,
+          "InstName" : "i2c_bit_shift",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/WM8960_Init/i2c_bit_shift.v",
+          "ModuleLine" : 16,
+          "ModuleName" : "i2c_bit_shift"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+    "InstLine" : 106,
+    "InstName" : "fft",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fft/fft.v",
+    "ModuleLine" : 3212,
+    "ModuleName" : "FFT_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fft/fft.v",
+      "InstLine" : 3247,
+      "InstName" : "fft_top_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fft/fft.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~fft_top.FFT_Top"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+    "InstLine" : 124,
+    "InstName" : "lms_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "lms",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms.v",
+      "InstLine" : 39,
+      "InstName" : "l_inst",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "lms16_order",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 80,
+        "InstName" : "bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[1].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[2].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[3].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[4].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[5].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[6].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[7].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[8].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[9].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[10].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[11].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[12].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[13].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[14].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lms16_order.v",
+        "InstLine" : 103,
+        "InstName" : "order[15].bg_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "base_generator",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 29,
+          "InstName" : "m1",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         },
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/base_generator.v",
+          "InstLine" : 37,
+          "InstName" : "m2",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+          "ModuleLine" : 3,
+          "ModuleName" : "mult16",
+          "SubInsts" : [
+           {
+            "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/mult16.v",
+            "InstLine" : 17,
+            "InstName" : "lpm_mult",
+            "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/signed_multiplier.v",
+            "ModuleLine" : 1,
+            "ModuleName" : "signed_multiplier"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+    "InstLine" : 137,
+    "InstName" : "noise_audio",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/noise_audio.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "noise_audio",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/noise_audio.v",
+      "InstLine" : 10,
+      "InstName" : "lfsr_0",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/lfsr_generator.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "lfsr_generator"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/noise_audio.v",
+      "InstLine" : 17,
+      "InstName" : "adder_0",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/noise_audio.v",
+      "InstLine" : 24,
+      "InstName" : "adder_1",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/adder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "adder"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+    "InstLine" : 185,
+    "InstName" : "i2s_rx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/i2s/i2s_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/i2s/i2s_rx.v",
+      "InstLine" : 122,
+      "InstName" : "adc_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/top/audio_lookback.v",
+    "InstLine" : 200,
+    "InstName" : "i2s_tx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/i2s/i2s_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/i2s/i2s_tx.v",
+      "InstLine" : 113,
+      "InstName" : "dac_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/LMS_noise/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

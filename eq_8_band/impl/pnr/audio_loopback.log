@@ -1,0 +1,33 @@
+Reading netlist file: "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\impl\gwsynthesis\audio_loopback.vg"
+Parsing netlist file "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\impl\gwsynthesis\audio_loopback.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\src\audio_loopback.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1132) :  'I2S_BCLK' was determined to be a clock but was not created.
+WARN  (TA1132) :  'I2S_DACLRC' was determined to be a clock but was not created.
+WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'I2S_DACLRC_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\impl\pnr\audio_loopback.power.html" completed
+Generate file "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\impl\pnr\audio_loopback.pin.html" completed
+Generate file "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\impl\pnr\audio_loopback.rpt.html" completed
+Generate file "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\impl\pnr\audio_loopback.rpt.txt" completed
+Generate file "C:\Users\Asus\Desktop\git_file\gowin_fpga\eq_8_band\impl\pnr\audio_loopback.tr.html" completed
+Fri Nov  8 00:18:34 2024
+

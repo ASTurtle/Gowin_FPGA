@@ -1,0 +1,77 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/I2C_Init_Dev.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/WM8960_Init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/i2c_bit_shift.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/i2c_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/wm8960_init_table.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/dds/dds.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/dpram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/half_band_filter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/i2s/i2s_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/i2s/i2s_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/impl/temp/rtl_parser.result",
+ "Top" : "audio_lookback",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

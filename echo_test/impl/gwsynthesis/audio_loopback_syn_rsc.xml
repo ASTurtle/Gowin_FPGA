@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_loopback" Register="98" Lut="4" T_Register="1992(98)" T_Alu="228(0)" T_Lut="1274(4)" T_MULTALU27X18="20(0)" T_Bsram="53(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="74(17)" T_Alu="15(15)" T_Lut="188(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="9" Lut="18" T_Register="57(9)" T_Lut="178(18)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="74" T_Register="48(25)" T_Lut="160(74)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="86" T_Register="23(23)" T_Lut="86(86)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="lowp_0" Register="144" Alu="31" MULTALU27X18="9" T_Register="144(144)" T_Alu="31(31)" T_MULTALU27X18="9(9)"/>
+    <SubModule name="lowp_1" Register="144" Alu="31" MULTALU27X18="9" T_Register="144(144)" T_Alu="31(31)" T_MULTALU27X18="9(9)"/>
+    <SubModule name="echo_0" Register="16" T_Register="139(16)" T_Alu="52(0)" T_Lut="129(0)" T_MULTALU27X18="1(0)" T_Bsram="4(0)">
+        <SubModule name="delay_inst" Register="2" T_Register="107(2)" T_Alu="35(0)" T_Lut="129(0)" T_Bsram="4(0)">
+            <SubModule name="delay_0" Register="105" Alu="35" Lut="129" Bsram="4" T_Register="105(105)" T_Alu="35(35)" T_Lut="129(129)" T_Bsram="4(4)"/>
+        </SubModule>
+        <SubModule name="gain_inst" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="echo_1" Register="16" T_Register="138(16)" T_Alu="52(0)" T_Lut="129(0)" T_MULTALU27X18="1(0)" T_Bsram="4(0)">
+        <SubModule name="delay_inst" Register="1" T_Register="106(1)" T_Alu="35(0)" T_Lut="129(0)" T_Bsram="4(0)">
+            <SubModule name="delay_0" Register="105" Alu="35" Lut="129" Bsram="4" T_Register="105(105)" T_Alu="35(35)" T_Lut="129(129)" T_Bsram="4(4)"/>
+        </SubModule>
+        <SubModule name="gain_inst" MULTALU27X18="1" T_MULTALU27X18="1(1)"/>
+        <SubModule name="add_inst" Register="16" Alu="17" T_Register="16(16)" T_Alu="17(17)"/>
+    </SubModule>
+    <SubModule name="i2s_rx" Register="81" Lut="69" T_Register="188(81)" T_Alu="16(0)" T_Lut="128(69)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="46" Lut="48" T_Register="153(46)" T_Alu="16(0)" T_Lut="106(48)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="58(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="58" T_Register="75(75)" T_Alu="16(16)" T_Lut="58(58)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="gw_gao_inst_0" Register="914" Alu="15" Lut="590" Bsram="42" T_Register="914(914)" T_Alu="15(15)" T_Lut="590(590)" T_Bsram="42(42)"/>
+</Module>

@@ -1,0 +1,108 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\I2C_Init_Dev.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\WM8960_Init.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\i2c_bit_shift.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\i2c_control.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\wm8960_init_table.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v'
+WARN  (EX3628) : Redeclaration of ANSI port 'audio_out' is not allowed("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v":20)
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\fifo\async_fifo.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\fifo\async_fifo_ctrl.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\fifo\dpram.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\gains.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\gowin_pll\gowin_pll.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_rx.v'
+Undeclared symbol 'adcfifo_full', assumed default net type 'wire'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_rx.v":129)
+WARN  (EX3801) : Parameter 'state_idle' becomes localparam in 'i2s_rx' with formal parameter declaration list("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_rx.v":16)
+WARN  (EX3801) : Parameter 'state_left_data' becomes localparam in 'i2s_rx' with formal parameter declaration list("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_rx.v":17)
+WARN  (EX3801) : Parameter 'state_right_data' becomes localparam in 'i2s_rx' with formal parameter declaration list("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_rx.v":18)
+WARN  (EX3801) : Parameter 'state_fifo_write' becomes localparam in 'i2s_rx' with formal parameter declaration list("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_rx.v":19)
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_tx.v'
+WARN  (EX3801) : Parameter 'state_idle' becomes localparam in 'i2s_tx' with formal parameter declaration list("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_tx.v":17)
+WARN  (EX3801) : Parameter 'state_tx_left_data' becomes localparam in 'i2s_tx' with formal parameter declaration list("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_tx.v":18)
+WARN  (EX3801) : Parameter 'state_tx_right_data' becomes localparam in 'i2s_tx' with formal parameter declaration list("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_tx.v":19)
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\signed_multiplier.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\top\audio_lookback.v'
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
+Analyzing included file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'
+Analyzing included file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_expression.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_parameter.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing included file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_parameter.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing Verilog file 'D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\gw_jtag.v'
+Analyzing Verilog file 'C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
+Compiling module 'audio_lookback'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\top\audio_lookback.v":1)
+Compiling module 'Gowin_PLL'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\gowin_pll\gowin_pll.v":10)
+Compiling module 'WM8960_Init'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\WM8960_Init.v":17)
+Compiling module 'I2C_Init_Dev'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\I2C_Init_Dev.v":16)
+Compiling module 'wm8960_init_table'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\wm8960_init_table.v":16)
+WARN  (EX1998) : Net 'rom[255][15]' does not have a driver("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\wm8960_init_table.v":26)
+Compiling module 'i2c_control'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\i2c_control.v":16)
+Compiling module 'i2c_bit_shift'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\i2c_bit_shift.v":16)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'rdreg_req'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\I2C_Init_Dev.v":124)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'addr_mode'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\WM8960_Init\I2C_Init_Dev.v":126)
+Compiling module 'compressor'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v":1)
+Compiling module 'gains'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\gains.v":1)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v":57)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v":58)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v":63)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v":66)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\compressor.v":67)
+Compiling module 'i2s_rx'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_rx.v":1)
+Compiling module 'async_fifo(DATA_WIDTH=32,ADDR_WIDTH=8)'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\fifo\async_fifo.v":1)
+Compiling module 'async_fifo_ctrl(DATA_WIDTH=32,ADDR_WIDTH=8)'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\fifo\async_fifo_ctrl.v":1)
+Compiling module 'dpram(DATA_WIDTH=32,ADDR_WIDTH=8)'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\fifo\dpram.v":1)
+Extracting RAM for identifier 'ram'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\fifo\dpram.v":23)
+Compiling module 'i2s_tx'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\i2s\i2s_tx.v":1)
+WARN  (EX1998) : Net 'dacfifo_writedata[31]' does not have a driver("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\src\top\audio_lookback.v":40)
+Compiling module 'gw_gao'("C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
+Compiling module 'GW_JTAG'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\gw_jtag.v":1)
+Compiling module '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Compiling module '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Compiling module '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Extracting RAM for identifier '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Compiling module '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v":74)
+Compiling module '**'("D:\Gowin\Gowin_V1.9.10.02_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Trying to combine GAO to RTL design
+NOTE  (EX0101) : Current top module is "audio_lookback"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\audio_loopback.vg" completed
+[100%] Generate report file "C:\Users\Asus\Desktop\git_file\gowin_fpga\compressor\impl\gwsynthesis\audio_loopback_syn.rpt.html" completed
+GowinSynthesis finish

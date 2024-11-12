@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="Equalizer" Register="2927" Alu="154" Lut="2067" MULTALU27X18="5" MULT12X12="2" MULTADDALU12X12="1" Bsram="5" T_Register="2927(2927)" T_Alu="154(154)" T_Lut="2067(2067)" T_MULTALU27X18="5(5)" T_MULT12X12="2(2)" T_MULTADDALU12X12="1(1)" T_Bsram="5(5)"/>

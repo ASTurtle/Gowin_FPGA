@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_lookback" Register="66" Lut="3" T_Register="1591(66)" T_Alu="470(0)" T_Lut="1086(3)" T_MULTALU27X18="20(0)" T_Bsram="31(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="74(17)" T_Alu="15(15)" T_Lut="174(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="9" Lut="17" T_Register="57(9)" T_Lut="164(17)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="67" T_Register="48(25)" T_Lut="147(67)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="80" T_Register="23(23)" T_Lut="80(80)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="phaser_0" Register="48" Alu="16" Lut="1" T_Register="247(48)" T_Alu="204(16)" T_Lut="76(1)" T_MULTALU27X18="10(0)" T_Bsram="2(0)">
+        <SubModule name="dds" Register="119" Alu="28" Lut="75" Bsram="2" T_Register="119(119)" T_Alu="28(28)" T_Lut="75(75)" T_Bsram="2(2)"/>
+        <SubModule name="allpass_filters[0].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[1].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[2].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[3].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[4].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+    </SubModule>
+    <SubModule name="phaser_1" Register="48" Alu="16" Lut="1" T_Register="242(48)" T_Alu="204(16)" T_Lut="75(1)" T_MULTALU27X18="10(0)" T_Bsram="2(0)">
+        <SubModule name="dds" Register="114" Alu="28" Lut="74" Bsram="2" T_Register="114(114)" T_Alu="28(28)" T_Lut="74(74)" T_Bsram="2(2)"/>
+        <SubModule name="allpass_filters[0].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[1].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[2].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[3].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+        <SubModule name="allpass_filters[4].filter_instance" Register="16" Alu="32" MULTALU27X18="2" T_Register="16(16)" T_Alu="32(32)" T_MULTALU27X18="2(2)"/>
+    </SubModule>
+    <SubModule name="i2s_rx" Register="81" Lut="71" T_Register="188(81)" T_Alu="16(0)" T_Lut="131(71)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="60(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="60" T_Register="75(75)" T_Alu="16(16)" T_Lut="60(60)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="46" Lut="46" T_Register="153(46)" T_Alu="16(0)" T_Lut="104(46)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="58(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="58" T_Register="75(75)" T_Alu="16(16)" T_Lut="58(58)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="gw_gao_inst_0" Register="621" Alu="15" Lut="523" Bsram="24" T_Register="621(621)" T_Alu="15(15)" T_Lut="523(523)" T_Bsram="24(24)"/>
+</Module>

@@ -1,0 +1,194 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="clk" trig_type="0" storage_depth="4096" window_num="1" capture_amount="4096" implementation="0" trigger_pos="0" module_name="audio_lookback" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Bus capture_enable="true" name="dacfifo_writedata[31:0]">
+                <Signal>dacfifo_writedata[31]</Signal>
+                <Signal>dacfifo_writedata[30]</Signal>
+                <Signal>dacfifo_writedata[29]</Signal>
+                <Signal>dacfifo_writedata[28]</Signal>
+                <Signal>dacfifo_writedata[27]</Signal>
+                <Signal>dacfifo_writedata[26]</Signal>
+                <Signal>dacfifo_writedata[25]</Signal>
+                <Signal>dacfifo_writedata[24]</Signal>
+                <Signal>dacfifo_writedata[23]</Signal>
+                <Signal>dacfifo_writedata[22]</Signal>
+                <Signal>dacfifo_writedata[21]</Signal>
+                <Signal>dacfifo_writedata[20]</Signal>
+                <Signal>dacfifo_writedata[19]</Signal>
+                <Signal>dacfifo_writedata[18]</Signal>
+                <Signal>dacfifo_writedata[17]</Signal>
+                <Signal>dacfifo_writedata[16]</Signal>
+                <Signal>dacfifo_writedata[15]</Signal>
+                <Signal>dacfifo_writedata[14]</Signal>
+                <Signal>dacfifo_writedata[13]</Signal>
+                <Signal>dacfifo_writedata[12]</Signal>
+                <Signal>dacfifo_writedata[11]</Signal>
+                <Signal>dacfifo_writedata[10]</Signal>
+                <Signal>dacfifo_writedata[9]</Signal>
+                <Signal>dacfifo_writedata[8]</Signal>
+                <Signal>dacfifo_writedata[7]</Signal>
+                <Signal>dacfifo_writedata[6]</Signal>
+                <Signal>dacfifo_writedata[5]</Signal>
+                <Signal>dacfifo_writedata[4]</Signal>
+                <Signal>dacfifo_writedata[3]</Signal>
+                <Signal>dacfifo_writedata[2]</Signal>
+                <Signal>dacfifo_writedata[1]</Signal>
+                <Signal>dacfifo_writedata[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="adcfifo_readdata[31:0]">
+                <Signal>adcfifo_readdata[31]</Signal>
+                <Signal>adcfifo_readdata[30]</Signal>
+                <Signal>adcfifo_readdata[29]</Signal>
+                <Signal>adcfifo_readdata[28]</Signal>
+                <Signal>adcfifo_readdata[27]</Signal>
+                <Signal>adcfifo_readdata[26]</Signal>
+                <Signal>adcfifo_readdata[25]</Signal>
+                <Signal>adcfifo_readdata[24]</Signal>
+                <Signal>adcfifo_readdata[23]</Signal>
+                <Signal>adcfifo_readdata[22]</Signal>
+                <Signal>adcfifo_readdata[21]</Signal>
+                <Signal>adcfifo_readdata[20]</Signal>
+                <Signal>adcfifo_readdata[19]</Signal>
+                <Signal>adcfifo_readdata[18]</Signal>
+                <Signal>adcfifo_readdata[17]</Signal>
+                <Signal>adcfifo_readdata[16]</Signal>
+                <Signal>adcfifo_readdata[15]</Signal>
+                <Signal>adcfifo_readdata[14]</Signal>
+                <Signal>adcfifo_readdata[13]</Signal>
+                <Signal>adcfifo_readdata[12]</Signal>
+                <Signal>adcfifo_readdata[11]</Signal>
+                <Signal>adcfifo_readdata[10]</Signal>
+                <Signal>adcfifo_readdata[9]</Signal>
+                <Signal>adcfifo_readdata[8]</Signal>
+                <Signal>adcfifo_readdata[7]</Signal>
+                <Signal>adcfifo_readdata[6]</Signal>
+                <Signal>adcfifo_readdata[5]</Signal>
+                <Signal>adcfifo_readdata[4]</Signal>
+                <Signal>adcfifo_readdata[3]</Signal>
+                <Signal>adcfifo_readdata[2]</Signal>
+                <Signal>adcfifo_readdata[1]</Signal>
+                <Signal>adcfifo_readdata[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">dacfifo_write</Signal>
+            <Bus capture_enable="true" name="sample_data_out[31:0]">
+                <Signal>sample_data_out[31]</Signal>
+                <Signal>sample_data_out[30]</Signal>
+                <Signal>sample_data_out[29]</Signal>
+                <Signal>sample_data_out[28]</Signal>
+                <Signal>sample_data_out[27]</Signal>
+                <Signal>sample_data_out[26]</Signal>
+                <Signal>sample_data_out[25]</Signal>
+                <Signal>sample_data_out[24]</Signal>
+                <Signal>sample_data_out[23]</Signal>
+                <Signal>sample_data_out[22]</Signal>
+                <Signal>sample_data_out[21]</Signal>
+                <Signal>sample_data_out[20]</Signal>
+                <Signal>sample_data_out[19]</Signal>
+                <Signal>sample_data_out[18]</Signal>
+                <Signal>sample_data_out[17]</Signal>
+                <Signal>sample_data_out[16]</Signal>
+                <Signal>sample_data_out[15]</Signal>
+                <Signal>sample_data_out[14]</Signal>
+                <Signal>sample_data_out[13]</Signal>
+                <Signal>sample_data_out[12]</Signal>
+                <Signal>sample_data_out[11]</Signal>
+                <Signal>sample_data_out[10]</Signal>
+                <Signal>sample_data_out[9]</Signal>
+                <Signal>sample_data_out[8]</Signal>
+                <Signal>sample_data_out[7]</Signal>
+                <Signal>sample_data_out[6]</Signal>
+                <Signal>sample_data_out[5]</Signal>
+                <Signal>sample_data_out[4]</Signal>
+                <Signal>sample_data_out[3]</Signal>
+                <Signal>sample_data_out[2]</Signal>
+                <Signal>sample_data_out[1]</Signal>
+                <Signal>sample_data_out[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="sampe_switch/filtered_data_out[31:0]">
+                <Signal>sampe_switch/filtered_data_out[31]</Signal>
+                <Signal>sampe_switch/filtered_data_out[30]</Signal>
+                <Signal>sampe_switch/filtered_data_out[29]</Signal>
+                <Signal>sampe_switch/filtered_data_out[28]</Signal>
+                <Signal>sampe_switch/filtered_data_out[27]</Signal>
+                <Signal>sampe_switch/filtered_data_out[26]</Signal>
+                <Signal>sampe_switch/filtered_data_out[25]</Signal>
+                <Signal>sampe_switch/filtered_data_out[24]</Signal>
+                <Signal>sampe_switch/filtered_data_out[23]</Signal>
+                <Signal>sampe_switch/filtered_data_out[22]</Signal>
+                <Signal>sampe_switch/filtered_data_out[21]</Signal>
+                <Signal>sampe_switch/filtered_data_out[20]</Signal>
+                <Signal>sampe_switch/filtered_data_out[19]</Signal>
+                <Signal>sampe_switch/filtered_data_out[18]</Signal>
+                <Signal>sampe_switch/filtered_data_out[17]</Signal>
+                <Signal>sampe_switch/filtered_data_out[16]</Signal>
+                <Signal>sampe_switch/filtered_data_out[15]</Signal>
+                <Signal>sampe_switch/filtered_data_out[14]</Signal>
+                <Signal>sampe_switch/filtered_data_out[13]</Signal>
+                <Signal>sampe_switch/filtered_data_out[12]</Signal>
+                <Signal>sampe_switch/filtered_data_out[11]</Signal>
+                <Signal>sampe_switch/filtered_data_out[10]</Signal>
+                <Signal>sampe_switch/filtered_data_out[9]</Signal>
+                <Signal>sampe_switch/filtered_data_out[8]</Signal>
+                <Signal>sampe_switch/filtered_data_out[7]</Signal>
+                <Signal>sampe_switch/filtered_data_out[6]</Signal>
+                <Signal>sampe_switch/filtered_data_out[5]</Signal>
+                <Signal>sampe_switch/filtered_data_out[4]</Signal>
+                <Signal>sampe_switch/filtered_data_out[3]</Signal>
+                <Signal>sampe_switch/filtered_data_out[2]</Signal>
+                <Signal>sampe_switch/filtered_data_out[1]</Signal>
+                <Signal>sampe_switch/filtered_data_out[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">I2S_BCLK</Signal>
+            <Signal capture_enable="true">I2S_DACLRC</Signal>
+            <Signal capture_enable="true">factor_clk</Signal>
+            <Signal capture_enable="true">sampe_switch/factor_clk</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>dacfifo_write</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>1101001110110100</GAO_ID>
+</GAO_CONFIG>

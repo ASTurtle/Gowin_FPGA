@@ -1,0 +1,246 @@
+[
+ {
+  "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+  "InstLine" : 1,
+  "InstName" : "audio_loopback",
+  "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "audio_loopback",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+    "InstLine" : 20,
+    "InstName" : "Gowin_PLL",
+    "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+    "InstLine" : 26,
+    "InstName" : "WM8960_Init",
+    "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/WM8960_Init.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "WM8960_Init",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/WM8960_Init.v",
+      "InstLine" : 56,
+      "InstName" : "I2C_Init_Dev",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/I2C_Init_Dev.v",
+      "ModuleLine" : 16,
+      "ModuleName" : "I2C_Init_Dev",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 108,
+        "InstName" : "wm8960_init_table",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/wm8960_init_table.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "wm8960_init_table"
+       },
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 120,
+        "InstName" : "i2c_control",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/i2c_control.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "i2c_control",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/i2c_control.v",
+          "InstLine" : 72,
+          "InstName" : "i2c_bit_shift",
+          "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/WM8960_Init/i2c_bit_shift.v",
+          "ModuleLine" : 16,
+          "ModuleName" : "i2c_bit_shift"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+    "InstLine" : 86,
+    "InstName" : "echo_0",
+    "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "echo",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+      "InstLine" : 22,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/gains.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+      "InstLine" : 31,
+      "InstName" : "delay_inst",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/delay.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/delay.v",
+        "InstLine" : 42,
+        "InstName" : "my_audio_delay1",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo_top/delay_fifo.v",
+        "ModuleLine" : 1223,
+        "ModuleName" : "delay_fifo",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo_top/delay_fifo.v",
+          "InstLine" : 1256,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo_top/delay_fifo.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.delay_fifo"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+      "InstLine" : 42,
+      "InstName" : "add_inst",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/add_sub.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "add_sub"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+    "InstLine" : 97,
+    "InstName" : "echo_1",
+    "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "echo",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+      "InstLine" : 22,
+      "InstName" : "gain_inst",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/gains.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "gains"
+     },
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+      "InstLine" : 31,
+      "InstName" : "delay_inst",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/delay.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "delay",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/delay.v",
+        "InstLine" : 42,
+        "InstName" : "my_audio_delay1",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo_top/delay_fifo.v",
+        "ModuleLine" : 1223,
+        "ModuleName" : "delay_fifo",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo_top/delay_fifo.v",
+          "InstLine" : 1256,
+          "InstName" : "fifo_inst",
+          "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo_top/delay_fifo.v",
+          "ModuleLine" : 13,
+          "ModuleName" : "~fifo.delay_fifo"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/echo.v",
+      "InstLine" : 42,
+      "InstName" : "add_inst",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/add_sub.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "add_sub"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+    "InstLine" : 112,
+    "InstName" : "i2s_rx",
+    "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/i2s/i2s_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/i2s/i2s_rx.v",
+      "InstLine" : 122,
+      "InstName" : "adc_fifo",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/top/audio_lookback.v",
+    "InstLine" : 127,
+    "InstName" : "i2s_tx",
+    "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/i2s/i2s_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/i2s/i2s_tx.v",
+      "InstLine" : 113,
+      "InstName" : "dac_fifo",
+      "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "D:/WORK/ElectronicDesign/FPGA/GowinFPGA/gowin_fpga/echo_test/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

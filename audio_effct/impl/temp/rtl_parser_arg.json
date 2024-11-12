@@ -1,0 +1,221 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/I2C_Init_Dev.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/WM8960_Init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/i2c_bit_shift.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/i2c_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/WM8960_Init/wm8960_init_table.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/adder.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/allpass_fiter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/amplifer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/band_filter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/base_generator.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/byte_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/chorus.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/coeffs.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/compressor.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/compute.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/counter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/data_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/dds/dds.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/dds_phaser/dds/dds_p.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/delay.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/delay_changable.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/delay_pipeline.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/distortion.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/echo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/eq_crtl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/equalizer/equalizer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/fifo/async_fifo_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/fifo/dpram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/delay_0.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/fifo_top/fifo_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/filter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/gains.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/i2s/i2s_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/i2s/i2s_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/lfsr_generator.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/lms.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/lms16_order.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/lms_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/low_pass.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/mult16.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/noise_audio.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/phaser.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/remote_filter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/reverb.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/sample_filter.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/sample_switch.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/signed_multiplier.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/tap6_rm.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/uart_cmd.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/Asus/Desktop/rubbish/src/top/audio_effect.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/Asus/Desktop/rubbish/impl/temp/rtl_parser.result",
+ "Top" : "audio_loopback",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

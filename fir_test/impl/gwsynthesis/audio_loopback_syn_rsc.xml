@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_lookback" Register="66" Lut="3" T_Register="3202(66)" T_Alu="779(0)" T_Lut="979(3)" T_MULTALU27X18="18(0)" T_Bsram="3(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="73(17)" T_Alu="15(15)" T_Lut="192(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="8" Lut="14" T_Register="56(8)" T_Lut="182(14)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="68" T_Register="48(25)" T_Lut="168(68)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="100" T_Register="23(23)" T_Lut="100(100)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="filter_1" Register="1361" Alu="366" Lut="264" MULTALU27X18="9" T_Register="1361(1361)" T_Alu="366(366)" T_Lut="264(264)" T_MULTALU27X18="9(9)"/>
+    <SubModule name="filter_2" Register="1361" Alu="366" Lut="264" MULTALU27X18="9" T_Register="1361(1361)" T_Alu="366(366)" T_Lut="264(264)" T_MULTALU27X18="9(9)"/>
+    <SubModule name="i2s_rx" Register="81" Lut="90" T_Register="188(81)" T_Alu="16(0)" T_Lut="150(90)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="60(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="60" T_Register="75(75)" T_Alu="16(16)" T_Lut="60(60)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="46" Lut="46" T_Register="153(46)" T_Alu="16(0)" T_Lut="106(46)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="60(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="60" T_Register="75(75)" T_Alu="16(16)" T_Lut="60(60)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+</Module>

@@ -1,0 +1,84 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\I2C_Init_Dev.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\WM8960_Init.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\i2c_bit_shift.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\i2c_control.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\wm8960_init_table.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\add_sub.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\delay.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo\async_fifo.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo\async_fifo_ctrl.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo\dpram.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\gains.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\gowin_pll\gowin_pll.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_rx.v'
+Undeclared symbol 'adcfifo_full', assumed default net type 'wire'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_rx.v":129)
+WARN  (EX3801) : Parameter 'state_idle' becomes localparam in 'i2s_rx' with formal parameter declaration list("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_rx.v":16)
+WARN  (EX3801) : Parameter 'state_left_data' becomes localparam in 'i2s_rx' with formal parameter declaration list("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_rx.v":17)
+WARN  (EX3801) : Parameter 'state_right_data' becomes localparam in 'i2s_rx' with formal parameter declaration list("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_rx.v":18)
+WARN  (EX3801) : Parameter 'state_fifo_write' becomes localparam in 'i2s_rx' with formal parameter declaration list("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_rx.v":19)
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_tx.v'
+WARN  (EX3801) : Parameter 'state_idle' becomes localparam in 'i2s_tx' with formal parameter declaration list("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_tx.v":17)
+WARN  (EX3801) : Parameter 'state_tx_left_data' becomes localparam in 'i2s_tx' with formal parameter declaration list("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_tx.v":18)
+WARN  (EX3801) : Parameter 'state_tx_right_data' becomes localparam in 'i2s_tx' with formal parameter declaration list("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_tx.v":19)
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v'
+Analyzing Verilog file 'D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo_top\delay_fifo.v'
+Compiling module 'audio_loopback'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v":1)
+Compiling module 'Gowin_PLL'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\gowin_pll\gowin_pll.v":10)
+Compiling module 'WM8960_Init'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\WM8960_Init.v":17)
+Compiling module 'I2C_Init_Dev'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\I2C_Init_Dev.v":16)
+Compiling module 'wm8960_init_table'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\wm8960_init_table.v":16)
+WARN  (EX1998) : Net 'rom[255][15]' does not have a driver("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\wm8960_init_table.v":26)
+Compiling module 'i2c_control'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\i2c_control.v":16)
+Compiling module 'i2c_bit_shift'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\i2c_bit_shift.v":16)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'rdreg_req'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\I2C_Init_Dev.v":124)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'addr_mode'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\WM8960_Init\I2C_Init_Dev.v":126)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v":75)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v":76)
+Compiling module 'echo'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v":1)
+Compiling module 'gains'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\gains.v":1)
+Compiling module 'delay'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\delay.v":1)
+Extracting RAM for identifier 'shift_reg'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\delay.v":13)
+Compiling module 'delay_fifo'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo_top\delay_fifo.v":1223)
+Compiling module '**'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo_top\delay_fifo.v":1222)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 13 for port 'Wnum'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\delay.v":47)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 13 for port 'Rnum'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\delay.v":48)
+WARN  (EX3670) : Actual bit length 13 differs from formal bit length 12 for port 'delay_num'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v":32)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'in'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v":33)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'out'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v":34)
+Compiling module 'add_sub'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\add_sub.v":1)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'a'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v":41)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'b'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v":42)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 32 for port 'result'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\echo.v":44)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'audio_data_0'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v":90)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'echo_data'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v":92)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'audio_data_0'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v":101)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'echo_data'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\top\audio_lookback.v":103)
+Compiling module 'i2s_rx'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_rx.v":1)
+Compiling module 'async_fifo(DATA_WIDTH=32,ADDR_WIDTH=8)'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo\async_fifo.v":1)
+Compiling module 'async_fifo_ctrl(DATA_WIDTH=32,ADDR_WIDTH=8)'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo\async_fifo_ctrl.v":1)
+Compiling module 'dpram(DATA_WIDTH=32,ADDR_WIDTH=8)'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo\dpram.v":1)
+Extracting RAM for identifier 'ram'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\fifo\dpram.v":23)
+Compiling module 'i2s_tx'("D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\src\i2s\i2s_tx.v":1)
+NOTE  (EX0101) : Current top module is "audio_loopback"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\impl\gwsynthesis\audio_loopback.vg" completed
+[100%] Generate report file "D:\WORK\ElectronicDesign\FPGA\GowinFPGA\gowin_fpga\echo_test\impl\gwsynthesis\audio_loopback_syn.rpt.html" completed
+GowinSynthesis finish

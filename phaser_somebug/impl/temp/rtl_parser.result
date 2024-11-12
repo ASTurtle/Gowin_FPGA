@@ -1,0 +1,282 @@
+[
+ {
+  "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+  "InstLine" : 1,
+  "InstName" : "audio_lookback",
+  "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "audio_lookback",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+    "InstLine" : 18,
+    "InstName" : "Gowin_PLL",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+    "InstLine" : 24,
+    "InstName" : "WM8960_Init",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/WM8960_Init.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "WM8960_Init",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/WM8960_Init.v",
+      "InstLine" : 56,
+      "InstName" : "I2C_Init_Dev",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/I2C_Init_Dev.v",
+      "ModuleLine" : 16,
+      "ModuleName" : "I2C_Init_Dev",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 108,
+        "InstName" : "wm8960_init_table",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/wm8960_init_table.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "wm8960_init_table"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 120,
+        "InstName" : "i2c_control",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/i2c_control.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "i2c_control",
+        "SubInsts" : [
+         {
+          "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/i2c_control.v",
+          "InstLine" : 72,
+          "InstName" : "i2c_bit_shift",
+          "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/WM8960_Init/i2c_bit_shift.v",
+          "ModuleLine" : 16,
+          "ModuleName" : "i2c_bit_shift"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+    "InstLine" : 78,
+    "InstName" : "phaser_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "phaser",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 29,
+      "InstName" : "dds",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/dds/dds.v",
+      "ModuleLine" : 863,
+      "ModuleName" : "DDS_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/dds/dds.v",
+        "InstLine" : 882,
+        "InstName" : "DDS",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/dds/dds.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "~DDS.DDS_Top"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[0].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[1].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[2].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[3].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[4].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+    "InstLine" : 87,
+    "InstName" : "phaser_1",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "phaser",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 29,
+      "InstName" : "dds",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/dds/dds.v",
+      "ModuleLine" : 863,
+      "ModuleName" : "DDS_Top",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/dds/dds.v",
+        "InstLine" : 882,
+        "InstName" : "DDS",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/dds/dds.v",
+        "ModuleLine" : 10,
+        "ModuleName" : "~DDS.DDS_Top"
+       }
+      ]
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[0].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[1].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[2].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[3].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     },
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/phaser.v",
+      "InstLine" : 42,
+      "InstName" : "allpass_filters[4].filter_instance",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/allpass_filter.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "allpass_filter"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+    "InstLine" : 97,
+    "InstName" : "halfpass_filter_0",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/half_band_filter.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "halfpass_filter"
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+    "InstLine" : 107,
+    "InstName" : "i2s_rx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/i2s/i2s_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/i2s/i2s_rx.v",
+      "InstLine" : 122,
+      "InstName" : "adc_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/top/audio_lookback.v",
+    "InstLine" : 122,
+    "InstName" : "i2s_tx",
+    "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/i2s/i2s_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/i2s/i2s_tx.v",
+      "InstLine" : 113,
+      "InstName" : "dac_fifo",
+      "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "C:/Users/Asus/Desktop/git_file/gowin_fpga/phaser_somebug/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5A-25A" pn="GW5A-LV25UG324C2/I1">gw5a25a-008</Device>
+    <FileList>
+        <File path="src/WM8960_Init/I2C_Init_Dev.v" type="file.verilog" enable="1"/>
+        <File path="src/WM8960_Init/WM8960_Init.v" type="file.verilog" enable="1"/>
+        <File path="src/WM8960_Init/i2c_bit_shift.v" type="file.verilog" enable="1"/>
+        <File path="src/WM8960_Init/i2c_control.v" type="file.verilog" enable="1"/>
+        <File path="src/WM8960_Init/wm8960_init_table.v" type="file.verilog" enable="1"/>
+        <File path="src/compressor.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo/async_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo/async_fifo_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo/dpram.v" type="file.verilog" enable="1"/>
+        <File path="src/gains.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/i2s/i2s_rx.v" type="file.verilog" enable="1"/>
+        <File path="src/i2s/i2s_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/signed_multiplier.v" type="file.verilog" enable="1"/>
+        <File path="src/top/audio_lookback.v" type="file.verilog" enable="1"/>
+        <File path="src/audio_loopback.cst" type="file.cst" enable="1"/>
+        <File path="src/audio_loopback.rao" type="file.gao" enable="1"/>
+    </FileList>
+</Project>

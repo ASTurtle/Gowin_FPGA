@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_lookback" Register="32" Lut="4" T_Register="392(32)" T_Alu="47(0)" T_Lut="427(4)" T_Bsram="4(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="74(17)" T_Alu="15(15)" T_Lut="176(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="9" Lut="18" T_Register="57(9)" T_Lut="166(18)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="69" T_Register="48(25)" T_Lut="148(69)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="79" T_Register="23(23)" T_Lut="79(79)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="distortion_effect_0" Register="27" Lut="41" Bsram="1" T_Register="27(27)" T_Lut="41(41)" T_Bsram="1(1)"/>
+    <SubModule name="i2s_rx" Register="49" Lut="49" T_Register="138(49)" T_Alu="16(0)" T_Lut="108(49)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="14" T_Register="89(14)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="i2s_tx" Register="30" Lut="39" T_Register="121(30)" T_Alu="16(0)" T_Lut="98(39)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="16" T_Register="91(16)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+</Module>
